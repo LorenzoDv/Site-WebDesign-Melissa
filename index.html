@@ -80,7 +80,7 @@
 <div class="cv">
     <img class="rectangle-feuille" src="assets/img/RectangleFeuilleCv.png" alt="Rectangle feuille">
     <div class="cv-experience">
-        <div>
+        <div class="left">
             <div>
                 <h4>Logiciels</h4>
                 <div class="logo">
@@ -99,7 +99,7 @@
                 <div>
                     <div>
                         <p>2019 - 2020 | <span class="red">Master 2 BioGET</span></p>
-                        <span>Université de Montpellier</span>
+                        <span class="spaceTop">Université de Montpellier</span>
                     </div>
                     <div>
                         <p>2018 - 2019 | <span class="red">Master 1 BEE BEST-T</span></p>
@@ -120,28 +120,30 @@
             <h4>Expériences</h4>
             <div>
                 <div>
-                    <p>2023 | <span class="red">Auxiliaire de vie</span></p>
+                    <p><span class="weight">2023 |</span> <span class="red">Auxiliaire de vie</span></p>
                     <span>Particulier employeur</span>
                 </div>
                 <div>
-                    <p>2022 - 2023 | <span class="red">Technicienne</span> de la marque Végétale Locale</p>
+                    <p><span class="weight">2022 - 2023 |</span> <span class="red">Technicienne</span> de la marque
+                        Végétale Locale</p>
                     <span>Semence nature</span>
                 </div>
                 <div>
-                    <p>2022 | <span class="red">Ouvrière</span> agricole</p>
+                    <p><span class="weight">2022 |</span> <span class="red">Ouvrière</span> agricole</p>
                     <span>Domaine de Sarros</span>
                 </div>
                 <div>
-                    <p>2022 | <span class="red">Responsable</span> de la multiplication</p>
+                    <p><span class="weight">2022 | </span><span class="red">Responsable</span> de la multiplication</p>
                     <span>Jardin de Taurignan</span>
                 </div>
                 <div>
-                    <p>2021 | <span class="red">Responsable</span> de la bibliographie et technicienne de la marque
+                    <p><span class="weight">2021 | </span><span class="red">Responsable</span> de la bibliographie et
+                        <span class="red">technicienne</span> de la marque
                         Végétal local</p>
                     <span>Semence nature</span>
                 </div>
                 <div>
-                    <p>2021 | Divers stages</p>
+                    <p><span class="weight">2021 | Divers stages</span></p>
                     <ul>
                         <li>Semence nature, semencier</li>
                         <li>Jardin botanique Henri Gaussen</li>
@@ -152,7 +154,7 @@
                     </ul>
                 </div>
                 <div>
-                    <p>2020 | Ouvrière agricole</p>
+                    <p><span class="weight">2020 |</span> <span class="red">Ouvrière agricole</span></p>
                     <span>Les Camarguettes</span>
                 </div>
             </div>
@@ -167,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="langue">
                 <h4>Mes +</h4>
                 <ul>
                     <li><span class="red">Passionnée</span></li>
@@ -180,7 +182,7 @@
                 <div>
                     <div>
                         <p>2021 | Gentiana / LPO</p>
-                        <span>Bénévole naturaliste</span>
+                        <span class="red300">Bénévole naturaliste</span>
                     </div>
                     <div>
                         <p>2019 - 2020 | Brin de forêt</p>
@@ -188,20 +190,80 @@
                     </div>
                     <div>
                         <p>2018 - 2019 | Grand’Air</p>
-                        <span>Membre du CA et bénévole</span>
+                        <span class="red300">Membre du CA et bénévole</span>
                     </div>
                     <div>
                         <p>2016 - 2018 | AEUPS</p>
-                        <span>Bénévole puis <span class="red">Présidente</span></span>
+                        <span class="red300">Bénévole puis <span class="red">Présidente</span></span>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
+    <a href="#" class="chevron-down-header3">
+        <img src="assets/img/Flèche maison 2 1.svg" alt="fleche-bottom">
+    </a>
 
+    <div class="formContact d-flex justify-content-center align-items-center">
+        <img class="MandalaCV" src="assets/img/Fleur_peinture_grise_pour_mimouche.png" alt="Fleur_peinture">
+        <div class="form ">
+            <h4>Formulaire de contact</h4>
+            <form action="" method="post">
+                <div class="d-flex align-items-center justify-content-center gap50">
+                    <div class="d-flex colunm ">
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="d-flex colunm">
+                        <label for="prenom">Prenom</label>
+                        <input type="text" name="name" id="prenom" required>
+                    </div>
+                </div>
+                <div class="d-flex colunm ">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="d-flex colunm ">
+                    <label for="objet">Objet</label>
+                    <input type="objet" name="objet" id="objet" required>
+                </div>
+                <div class="d-flex colunm ">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" class="send" value="Envoyer">
+                </div>
+            </form>
+        </div>
+        <div class="contact">
+            <h4>Coordonnées</h4>
+            <div class="contact-picto">
+                <div class="d-flex d-flex align-items-center gap50">
+                    <img src="assets/img/Picto téléphone.svg" alt="phone">
+                    <p>06 50 50 50 50</p>
+                </div>
+                <div class="d-flex align-items-center gap50">
+                    <img src="assets/img/Picto Mail.svg" alt="mail">
+                    <a href="mailto:melissa.piana@protonmail.com">melissa.piana@protonmail.com</a>
+
+                </div>
+                <div class="d-flex align-items-center gap50">
+                    <img src="assets/img/Picto LinkedIn.svg" alt="linkedin">
+                    <a href="https://www.linkedin.com/in/mélissa-p-8246a229b">https://www.linkedin.com/in/mélissa-p-8246a229b</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
+<footer>
+    <img class="chevron-down-header4" src="assets/img/Fleur_peinture_rouge.png" alt="Fleur_peinture_rouge">
+    <div class="red-circle-footer">
+        <a href="#">Accueil</a>
+        <a href="#">Portefolio</a>
+    </div>
+</footer>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
