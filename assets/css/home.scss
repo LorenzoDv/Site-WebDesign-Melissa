@@ -1,0 +1,427 @@
+@import "colors";
+
+body {
+  background-color: $color1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  position: relative;
+  ///////////// NAV /////////////
+  height: 2115px;
+  overflow: hidden;
+
+  nav {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    top: 81px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 4em;
+
+      li {
+        list-style: none;
+
+        .active-menu {
+          width: 184px;
+          display: flex !important;
+          animation: height 0.3s linear both;
+        }
+
+        @keyframes height {
+          from {
+            height: 0;
+            opacity: 0;
+          }
+          to {
+            height: 77px;
+            opacity: 1;
+          }
+        }
+
+        .sous-menu {
+          display: none;
+          background-color: #f1e7e7;
+          border-radius: 5px;
+          padding: 13px 13px 13px 13px;
+          position: absolute;
+          left: 24px;
+          top: 40px;
+          transition: all 0.5s linear;
+          opacity: 0;
+          flex-direction: column;
+          z-index: 5;
+          gap: 10px;
+
+          a {
+            flex-direction: row !important;
+
+            &:after {
+              content: none !important;
+            }
+
+            &:before {
+              content: none !important;
+            }
+          }
+
+          a {
+            font-size: 16px;
+            font-weight: 300;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: black;
+          text-transform: uppercase;
+          font-family: $font1;
+          font-size: 20px;
+          font-weight: 500;
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          gap: 9px;
+          position: relative;
+
+          &:after {
+            content: "";
+            width: 36px;
+            height: 36px;
+            transition: all 0.2s linear;
+            opacity: 0;
+          }
+
+          &:hover {
+            &:after {
+              content: url("../img/Fleur souris.svg");
+              width: 36px;
+              height: 36px;
+              transition: all 0.2s linear;
+              opacity: 1;
+            }
+          }
+
+
+        }
+
+        &:nth-child(1) {
+          position: relative;
+          right: 500px;
+
+          //a {
+          //  &:before {
+          //    content: url("../img/chevron-down-solid.svg");
+          //    display: block;
+          //    width: 15px;
+          //  }
+          //}
+
+          &:after {
+            content: "";
+            width: 500px;
+            height: 3px;
+            background-color: #f1e7e7;
+            display: block;
+            position: absolute;
+            left: -1px;
+            bottom: -6px;
+          }
+
+
+        }
+
+        &:nth-child(2) {
+          position: relative;
+          right: 400px;
+
+          &:after {
+            content: "";
+            width: 500px;
+            height: 3px;
+            background-color: #f1e7e7;
+            display: block;
+            position: absolute;
+            left: 11px;
+            bottom: -6px;
+          }
+        }
+
+        &:nth-child(3) {
+          position: relative;
+          right: 300px;
+
+          &:after {
+            content: "";
+            width: 500px;
+            height: 3px;
+            background-color: #f1e7e7;
+            display: block;
+            position: absolute;
+            left: -1px;
+            bottom: -6px;
+          }
+        }
+
+        &:nth-child(4) {
+          position: relative;
+          right: 200px;
+
+          &:after {
+            content: "";
+            width: 500px;
+            height: 3px;
+            background-color: #f1e7e7;
+            display: block;
+            position: absolute;
+            left: -1px;
+            bottom: -6px;
+          }
+        }
+
+        &:nth-child(5) {
+          position: relative;
+          right: 100px;
+
+          &:after {
+            content: "";
+            width: 500px;
+            height: 3px;
+            background-color: #f1e7e7;
+            display: block;
+            position: absolute;
+            left: -1px;
+            bottom: -6px;
+          }
+        }
+      }
+    }
+  }
+
+  .circle-home {
+    height: 1950px;
+    width: 118%;
+    background-color: rgba(134, 45, 45, .75);
+    border-radius: 50%;
+    position: absolute;
+    top: -317px;
+    left: -23%;
+    z-index: 1;
+
+  }
+
+  .profile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    hr {
+      position: absolute;
+      width: 228px;
+      height: 3px;
+      background-color: $color1;
+      border: none;
+      bottom: 56px;
+    }
+
+    .profile-mandala-img {
+      position: absolute;
+
+      .img-melissa {
+        position: absolute;
+        left: 16px;
+        top: 11px;
+      }
+    }
+  }
+
+  .bonjour {
+    position: absolute;
+    top: 356px;
+    z-index: 4;
+    padding-left: 320px;
+    padding-bottom: 46px;
+
+    h1 {
+      margin-top: 50px;
+      color: white;
+      font-family: $font1;
+      font-weight: 400;
+      font-size: 48px;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-top: 10px;
+      color: white;
+      font-family: $font1;
+      font-weight: 400;
+      font-size: 44px;
+      margin-bottom: 50px;
+    }
+
+    p {
+      color: white;
+      font-family: $font1;
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    &:after {
+      content: "";
+      width: 1500px;
+      height: 3px;
+      background-color: #f1e7e7;
+      display: block;
+      position: absolute;
+      top: -4px;
+      left: 319px;
+    }
+
+    &:before {
+      content: "";
+      width: 914px;
+      height: 3px;
+      background-color: #f1e7e7;
+      display: block;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+  }
+
+  .chevron-down-header {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: 8;
+    transform: translate(-50%, -50%);
+  }
+
+  .about-me {
+
+    position: absolute;
+    top: 920px;
+    left: 290px;
+
+    z-index: 3;
+
+    h3 {
+      font-family: $font2;
+      font-weight: 400;
+      font-size: 24px;
+    }
+
+    .p-size {
+      width: 444px;
+      margin-bottom: 40px;
+      margin-top: 40px;
+      padding-left: 0;
+    }
+
+    p {
+      color: white;
+      font-size: 20px;
+      font-family: $font1;
+      padding-left: 15px;
+    }
+  }
+
+  .mandala-home-bottom {
+    position: absolute;
+    top: 950px;
+    z-index: 8;
+    right: -365px;
+    rotate: 90deg;
+  }
+
+  .chevron-down-header2 {
+    position: absolute;
+    left: 50%;
+    z-index: 8;
+    transform: translate(-50%, -50%);
+    bottom: 50px;
+  }
+}
+
+.cv {
+  .rectangle-feuille {
+    opacity: 0.4;
+    margin: 0 auto;
+    display: block;
+    border-radius: 30px;
+  }
+
+  h4 {
+    color: black;
+    font-family: $font1;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+
+  .red {
+    color: $color3;
+    font-weight: 500;
+  }
+
+  p {
+    font-family: $font1;
+    margin-bottom: 0;
+  }
+
+  li {
+    position: relative;
+    font-family: $font1;
+    list-style: none;
+
+    &:after {
+      content: ".";
+      position: absolute;
+      left: -10px;
+      top: -4px;
+    }
+
+  }
+
+  span {
+    font-family: $font1;
+  }
+
+  .cv-experience {
+    display: flex;
+    justify-content: center;
+    gap: 14em;
+
+    .logo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 17px;
+      align-items: center;
+      justify-content: center;
+      width: 290px;
+    }
+  }
+
+  .experience {
+    width: 347px;
+  }
+
+  .langue {
+    .langue-p {
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+}

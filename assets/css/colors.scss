@@ -1,0 +1,22 @@
+//declare variable color
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("../fonts/AL_Nevrada_PersonalUseOnly.ttf");
+}
+
+$font1: 'Montserrat', sans-serif;
+$font2: 'myFirstFont';
+
+
+$color1: #F1E7E7;
+$color2: rgba(134, 45, 45, 0.75);
+
+$color3: #862D2D;
+$color4: #0f0;
+$color5: #00f;
+$color6: #ff0;
+$color7: #0ff;
