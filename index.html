@@ -2,13 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio - Mélissa</title>
     <link rel="stylesheet" href="assets/css/home.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Lorenzo Devichi">
 </head>
 <body>
 <div class="home">
@@ -16,7 +18,7 @@
     <nav>
         <ul>
             <li>
-                <a id="sous-menu" href="#">Portfolio</a>
+                <a id="sous-menu" href="portefolio.html">Portfolio</a>
                 <!--                <div class="sous-menu">-->
                 <!--                    <a href="#">Identités visuelles</a>-->
                 <!--                    <a href="#">Maquettes</a>-->
@@ -78,7 +80,11 @@
 
 </div>
 <div class="cv">
-    <img class="rectangle-feuille" src="assets/img/RectangleFeuilleCv.png" alt="Rectangle feuille">
+
+    <div class="p-relative">
+        <h3 class="p-abso-center nevrada cv-title">Curriculum vitae</h3>
+        <img class="rectangle-feuille" src="assets/img/RectangleFeuilleCv.png" alt="Rectangle feuille">
+    </div>
     <div class="cv-experience">
         <div class="left">
             <div>
@@ -207,15 +213,18 @@
 
     <div class="formContact d-flex justify-content-center align-items-center">
         <img class="MandalaCV" src="assets/img/Fleur_peinture_grise_pour_mimouche.png" alt="Fleur_peinture">
+
         <div class="form ">
-            <h4>Formulaire de contact</h4>
+
             <form action="" method="post">
-                <div class="d-flex align-items-center justify-content-center gap50">
-                    <div class="d-flex colunm ">
+                <h4>Formulaire de contact</h4>
+                <div class="d-flex align-items-center gap50">
+
+                    <div class="d-flex colunm w50">
                         <label for="name">Nom</label>
                         <input type="text" name="name" id="name" required>
                     </div>
-                    <div class="d-flex colunm">
+                    <div class="d-flex colunm w50">
                         <label for="prenom">Prenom</label>
                         <input type="text" name="name" id="prenom" required>
                     </div>
@@ -255,13 +264,21 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 <footer>
     <img class="chevron-down-header4" src="assets/img/Fleur_peinture_rouge.png" alt="Fleur_peinture_rouge">
     <div class="red-circle-footer">
-        <a href="#">Accueil</a>
-        <a href="#">Portefolio</a>
+
+        <a href="#">
+            Accueil
+
+        </a>
+        <a href="#">
+            Portefolio
+
+        </a>
     </div>
 </footer>
 <script src="assets/js/script.js"></script>

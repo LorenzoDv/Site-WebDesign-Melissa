@@ -4,12 +4,12 @@
 
 
 @font-face {
-  font-family: myFirstFont;
+  font-family: Nevrada;
   src: url("../fonts/AL_Nevrada_PersonalUseOnly.ttf");
 }
 
 $font1: 'Montserrat', sans-serif;
-$font2: 'myFirstFont';
+$font2: 'Nevrada';
 
 
 $color1: #F1E7E7;
@@ -18,8 +18,13 @@ $color2: rgba(134, 45, 45, 0.75);
 $color3: #862D2D;
 $color4: #E6D4D4;
 $color5: #441E1E;
-$color6: #ff0;
-$color7: #0ff;
+$color6: #A05C5C;
+$color7: #none;
+$color8: #none;
+$color9: #none;
+$color10: #none;
+$color11: #none;
+$color12: #none;
 
 
 .d-flex {
@@ -30,10 +35,45 @@ $color7: #0ff;
   flex-direction: column;
 }
 
+.over-hidden {
+  overflow: hidden;
+}
+
 .align-items-center {
   align-items: center;
 }
 
+.align-items-end {
+  align-items: end;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
 .justify-content-center {
   justify-content: center;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-abso-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p-abso {
+  position: absolute;
+}
+
+.nevrada {
+  font-family: $font2;
+}
+
+.w50 {
+  width: 50%;
 }
