@@ -35,3 +35,12 @@ $('.mail').mouseleave(function () {
     $('.mail img').removeClass('active-img');
     $('.mail-adress').removeClass('active-mail');
 })
+
+
+//faire rotate MandalaCV en fonction du scroll
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    $('.MandalaCV').css({
+        transform: 'rotate(' + scroll / 25 + 'deg)'
+    });
+});

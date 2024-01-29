@@ -55,6 +55,22 @@ $color12: #none;
   justify-content: center;
 }
 
+.justify-content-beetween {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
 .p-relative {
   position: relative;
 }
@@ -76,4 +92,26 @@ $color12: #none;
 
 .w50 {
   width: 50%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $color1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color6;
 }

@@ -1,7 +1,7 @@
 @import "colors";
 
 .portefolio {
-  background: rgba(0, 0, 0, 0.90);
+  background: #161616;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -94,11 +94,18 @@ footer {
   height: 400px;
 
   .contact {
-    bottom: 0;
-    width: 248px;
-    height: 262px;
-    position: relative;
-    cursor: url("../img/Dino.png"), auto;
+    bottom: -100px;
+    left: -53px;
+    width: 307px;
+    height: 324.331px;
+    cursor: url(../img/Dino.png), auto;
+    border: 19px solid #161616;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: $color3;
 
     a {
       color: $color1;
@@ -106,12 +113,11 @@ footer {
       font-size: 28px;
       font-family: $font1;
       font-weight: 400;
-      position: absolute;
-      left: 36px;
-      z-index: 1;
       cursor: url(../img/Dino.png), auto;
       text-align: center;
-      top: 116px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       svg {
         position: relative;
@@ -128,17 +134,25 @@ footer {
   }
 
   .picto {
-    margin-top: 70px;
+
     display: flex;
     gap: 3em;
-    margin-left: 5.5em;
+    margin-left: 345px;
+    position: relative;
+    top: -70px;
+
+    border-radius: 50%;
+
 
     .tel {
-      width: 150px;
-      height: 150px;
+      width: 109.3px;
+      height: 109.3px;
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: $color3;
+      border-radius: 50%;
+      border: 11.38px solid #161616;
 
       .active-img {
         transform: scale(0);
@@ -154,6 +168,7 @@ footer {
 
       img {
         transition: all 0.3s ease-in-out;
+
       }
 
       .tel-number {
@@ -171,12 +186,15 @@ footer {
     }
 
     .mail {
-      width: 150px;
-      height: 150px;
+      width: 109.3px;
+      height: 109.3px;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: $color3;
+      border-radius: 50%;
+      border: 11.38px solid #161616;
 
       .active-img {
         transform: scale(0);
@@ -207,64 +225,43 @@ footer {
     }
 
     .linkedin {
-      width: 150px;
-      height: 150px;
+      width: 109.3px;
+      height: 109.3px;
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: $color3;
+      border-radius: 50%;
+      border: 11.38px solid #161616;
     }
   }
 
-  .nav-footer {
-    position: relative;
-    overflow: hidden;
+  .bandeaux {
+    background-color: $color5;
+    display: flex;
+    border-top-left-radius: 50px;
+    height: 145px;
 
-    .portefolio-footer {
-      width: 442px;
-      height: 400px;
-      border-radius: 50%;
-      position: absolute;
-      bottom: 0;
-      right: 0px;
-
-      .svg1 {
-        position: absolute;
-        width: 464.06px;
-        height: 412.46px;
-      }
-
-      .svg2 {
-        position: absolute;
-        z-index: 1;
-        top: 66%;
-        left: 5px;
-      }
-
-      .svg3 {
-        position: absolute;
-        left: -292px;
-        top: 141px;
-      }
-
-      .svg4 {
-        position: absolute;
-        left: -214px;
-        top: 271px;
-      }
-
-      .svg5 {
-        top: 60%;
-        left: -184px;
-      }
+    .nav-right {
+      width: 45%;
 
       a {
-        position: absolute;
-        top: 59%;
-        left: 150px;
+        width: 159.055px;
+        height: 159.055px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
         color: $color1;
         font-family: $font1;
-        text-decoration: none;
-        font-size: 23px;
+        font-size: 28px;
+        font-weight: 400;
+        background-color: $color6;
+        top: -55px;
+        position: relative;
+        border: 12px solid #161616;
       }
     }
   }

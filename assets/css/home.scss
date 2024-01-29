@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  //scroll-behavior: smooth;
 }
 
 .home {
@@ -109,9 +110,20 @@ body {
               height: 36px;
               transition: all 0.2s linear;
               opacity: 1;
+              animation: rotatePicto 10s infinite linear;
             }
           }
 
+          @keyframes rotatePicto {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            100% {
+              transform: rotate(360deg);
+            }
+
+          }
 
         }
 
@@ -545,10 +557,19 @@ body {
     background-color: $color2;
     border-radius: 8px;
     height: auto;
-    color: white;
+    color: $color1;
     margin: 0 auto;
     display: block;
     font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      padding: 6px 60px;
+      color: $color1;
+      transition: all 0.5s ease-in-out;
+      font-size: 20px;
+    }
   }
 
   label {
@@ -599,39 +620,58 @@ footer {
   overflow: hidden;
   height: 405px;
 
+  display: flex;
+  align-items: end;
+  justify-content: end;
 
   .chevron-down-header4 {
     position: absolute;
-    left: -200px;
-    width: 736px;
-    height: 718px;
-    top: 8px;
+    left: -175px;
+    width: 581.28px;
+    height: 572.4px;
+    top: 100px;
+    transform: rotate(11.55deg);
+    border: 10px solid #f1e7e7;
   }
 
-  .red-circle-footer {
-    width: 615px;
-    height: 615px;
-    position: absolute;
-    border-radius: 50%;
-    background-color: #441e1e;
-    bottom: -370px;
-    z-index: 999;
-    left: 52%;
-    transform: translate(-50%);
+  .contact-footer {
+    height: 188px;
+
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
+    justify-content: inherit;
     gap: 5em;
+    padding-right: 10em;
+    position: relative;
+
+    svg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
 
     a {
-      color: white;
+      width: 159.055px;
+      height: 159.055px;
+      border-radius: 50%;
+      background-color: $color5;
       text-decoration: none;
+      color: $color1;
+      font-size: 22.29px;
       font-family: $font1;
-      font-size: 24px;
+      border: 10px solid $color1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: -90px;
+      transition: all 0.5s ease-in-out;
 
-      &:nth-child(1) {
-        margin-top: 3em;
+      &:hover {
+        background-color: $color1;
+        color: $color5;
+        transition: all 0.5s ease-in-out;
+        font-size: 24px;
       }
     }
   }
