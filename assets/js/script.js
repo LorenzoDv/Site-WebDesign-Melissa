@@ -41,6 +41,6 @@ $('.mail').mouseleave(function () {
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     $('.MandalaCV').css({
-        transform: 'rotate(' + scroll / 25 + 'deg)'
+        transform: 'rotate(' + scroll / 20 + 'deg)'
     });
 });

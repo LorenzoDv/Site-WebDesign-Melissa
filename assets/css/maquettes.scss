@@ -15,7 +15,7 @@ nav {
   justify-content: center;
   flex-direction: column;
   gap: 4em;
-  background-color: $color5;
+  background-color: $color6;
 
   .navtop {
     display: flex;
@@ -97,7 +97,7 @@ nav {
     width: 530px;
     height: 530px;
     border-radius: 50%;
-    background-color: $color6;
+    background-color: $color5;
     left: 50%;
     top: -250px;
     transform: translateX(-50%);
@@ -142,7 +142,7 @@ nav {
       width: 104.985px;
       height: 104.985px;
       border-radius: 50%;
-      background-color: $color6;
+      background-color: $color5;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -337,7 +337,7 @@ footer {
   }
 
   .bandeaux {
-    background-color: $color5;
+    background-color: $color6;
     display: flex;
     border-top-left-radius: 50px;
     height: 200px;
@@ -359,7 +359,7 @@ footer {
         font-family: $font1;
         font-size: 28px;
         font-weight: 400;
-        background-color: $color6;
+        background-color: $color5;
         top: -55px;
         position: relative;
         border: 12px solid $color1;
