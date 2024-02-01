@@ -9,13 +9,27 @@ body {
 }
 
 nav {
-  height: 241px;
+
   display: flex;
-  /* align-items: center; */
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
   gap: 4em;
-  background-color: $color6;
+  background-color: $color5;
+  height: 370px;
+  align-items: start;
+  padding-top: 60px;
+  position: relative;
+
+  hr {
+    background-image: url(../img/Ligne_pointilles.png);
+    background-position: bottom;
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    margin: 0;
+    height: 5px;
+    border: none;
+  }
 
   .navtop {
     display: flex;
@@ -97,11 +111,10 @@ nav {
     width: 530px;
     height: 530px;
     border-radius: 50%;
-    background-color: $color5;
     left: 50%;
     top: -250px;
     transform: translateX(-50%);
-    border: 10px solid white;
+
     z-index: 1;
     display: flex;
     align-items: center;
@@ -116,75 +129,241 @@ nav {
       font-family: $font2;
       color: $color1;
       top: 110px;
-
+      text-align: center;
+      line-height: 57px;
     }
 
     img {
       position: absolute;
-      bottom: 6px;
-      left: 6px;
+      bottom: -62px;
+      width: 569px;
+      height: 569px;
     }
   }
 }
 
-.projet-ident {
-  padding-top: 13em;
+//// main friche ////
 
-  .projet {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 6em;
+.friche-main {
+  .presentation-friche {
+    p {
+      max-width: 50%;
+      color: #000;
+      text-align: justify;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      border-bottom: 4px solid $color3;
+      margin: 0;
+      padding-bottom: 15px;
+    }
+  }
 
-    .circle-rose {
-      width: 104.985px;
-      height: 104.985px;
-      border-radius: 50%;
-      background-color: $color5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  .border-bottom {
+    border-bottom: 4px solid $color3;
+  }
+
+  .text {
+    width: 77%;
+  }
+
+  .chevron-down-header {
+    margin-top: 100px;
+    display: block;
+
+    img {
+      display: block;
+      margin: 0 auto;
     }
 
+  }
+
+  .new-ident {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+
     h2 {
-      font-size: 28px;
+      color: #441E1E;
+      font-size: 40px;
       font-style: normal;
       font-weight: 400;
-      font-family: $font2;
-      color: black;
+      line-height: normal;
+      position: relative;
+      top: 8px;
+    }
+
+    .trait {
+      height: 4px;
+      background-color: $color3;
+
+    }
+  }
+
+  .couleur-typo {
+    margin-top: 160px;
+    h3 {
+      color: #000;
+      text-align: center;
+
+      font-family: $font1;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .marcellus {
+      color: #000;
+
+      text-align: justify;
+      font-family: $font3;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .marcellus-p {
+      font-family: $font3;
+      color: #000;
+      text-align: justify;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .segoe-p {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #000;
+      text-align: justify;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .segoe {
+      color: #000;
+
+      text-align: justify;
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    hr {
+      background-color: $color3;
+      width: 100%;
+      height: 4px;
+      border: none;
       margin: 0;
     }
 
-    p {
-      text-align: justify;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 300;
-      font-family: $font1;
-      margin-top: 10px;
-
-    }
-
-    a {
-      text-decoration: none;
-      color: $color5;
-
+    .typo {
       display: flex;
-      font-family: $font1;
-      font-weight: 500;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 42%;
 
-      img {
-        margin-right: 5px;
+      p {
+        max-width: 197.137px;
       }
     }
 
-    p {
-      max-width: 669.731px;
+    .couleur {
+      display: flex;
+      flex-direction: column;
+
+
+      span {
+        width: 48.033px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: block;
+
+      }
+
+      p {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .one {
+        background-color: #F1CFCB;
+      }
+
+      .two {
+        background-color: #A8072B;
+      }
+
+      .three {
+        background-color: #000;
+      }
+
+      .p-color {
+        width: 500px;
+        height: 270px;
+      }
+    }
+
+    .color {
+      width: 52%;
+
+      p {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+
+      .affichage-couleur {
+        position: relative;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      span {
+        width: 48.033px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: block;
+
+      }
+
+      .one {
+        background-color: #F1CFCB;
+      }
+
+      .two {
+        background-color: #A8072B;
+      }
+
+      .three {
+        background-color: #000;
+      }
     }
   }
+
 }
+
 
 footer {
   display: flex;
@@ -217,6 +396,8 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
+      top: -20px;
 
       svg {
         position: relative;
@@ -337,7 +518,7 @@ footer {
   }
 
   .bandeaux {
-    background-color: $color6;
+    background-color: $color5;
     display: flex;
     border-top-left-radius: 50px;
     height: 200px;
@@ -359,7 +540,7 @@ footer {
         font-family: $font1;
         font-size: 28px;
         font-weight: 400;
-        background-color: $color5;
+        background-color: $color6;
         top: -55px;
         position: relative;
         border: 12px solid $color1;
@@ -380,7 +561,7 @@ footer {
     opacity: 0;
   }
   to {
-    height: 89px;
+    height: 118px;
     opacity: 1;
   }
 }
