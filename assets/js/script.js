@@ -15,6 +15,14 @@ $('.slidePortefolio').each(function () {
     $(this).find('.mandala').mouseleave(function () {
         $(this).removeClass('active-slide');
     });
+    $(this).find('.mandala-center').hover(function () {
+        $(this).addClass('active-slide-center');
+        $(this).removeClass('active-slide');
+    });
+    $(this).find('.mandala-center').mouseleave(function () {
+        $(this).removeClass('active-slide-center');
+        $(this).removeClass('active-slide');
+    });
 
 });
 
