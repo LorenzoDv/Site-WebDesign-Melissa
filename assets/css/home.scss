@@ -625,6 +625,15 @@ footer {
   align-items: end;
   justify-content: end;
 
+  .bandeaux {
+    height: 188.04px;
+    width: 100%;
+    position: absolute;
+    background-color: $color5;
+    z-index: -1;
+
+  }
+
   .chevron-down-header4 {
     position: absolute;
     left: -175px;
@@ -632,7 +641,7 @@ footer {
     height: 572.4px;
     top: 100px;
     transform: rotate(11.55deg);
-    border: 10px solid #f1e7e7;
+    
   }
 
   .contact-footer {
