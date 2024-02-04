@@ -9,42 +9,46 @@ body {
 }
 
 nav {
-
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  gap: 4em;
-  background-color: $color5;
-  height: 370px;
-  align-items: start;
-  padding-top: 60px;
-  position: relative;
-
-  hr {
-    background-image: url(../img/Ligne_pointilles.png);
-    background-position: bottom;
+  .a-crea {
     width: 100%;
+    top: 50px;
+  }
+
+  h1 {
+    color: #441E1E;
+    text-align: center;
+    font-family: $font2;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     position: absolute;
-    bottom: -2px;
-    margin: 0;
-    height: 5px;
-    border: none;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+
   }
 
   .navtop {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 87%;
     margin: 0 auto;
+  }
+
+  .a-left {
+    position: relative;
+    left: -59px;
   }
 
   .navBot {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 85%;
-    margin: 0 auto;
+    width: 96%;
+
+    margin-top: 4em;
 
     #sous-menu {
 
@@ -94,56 +98,40 @@ nav {
       }
     }
   }
+}
 
-  @keyframes rotatePicto {
-    0% {
-      transform: rotate(0deg);
-    }
+.calendrier {
+  p {
+    color: #441E1E;
 
-    100% {
-      transform: rotate(360deg);
-    }
-
+    text-align: justify;
+    font-family: $font1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 711px;
+    margin-left: 15em;
+    margin-top: -17em;
   }
 
-  .circle {
-    position: absolute;
-    width: 530px;
-    height: 530px;
-    border-radius: 50%;
-    left: 50%;
-    top: -250px;
-    transform: translateX(-50%);
-
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    h1 {
-      z-index: 20;
-      position: relative;
-      font-size: 48px;
-      font-style: normal;
-      font-weight: 400;
-      font-family: $font2;
-      color: $color1;
-      top: 110px;
-      text-align: center;
-      line-height: 57px;
-    }
-
-    img {
-      position: absolute;
-      bottom: -62px;
-      width: 569px;
-      height: 569px;
-    }
+  img {
+    margin: 0 auto;
+    display: block;
+    margin-top: 4em;
+    width: 100%;
   }
 }
 
+.IDsuivante {
+  margin-top: 12em;
+  margin-bottom: 2em;
 
-
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+}
 
 footer {
   display: flex;
@@ -216,23 +204,23 @@ footer {
 
       .active-img {
         transform: scale(0);
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
       }
 
       .active-tel {
         transform: translate(-50%, -50%) scale(1) !important;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
       }
 
       img {
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
       }
 
       .tel-number {
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -258,22 +246,22 @@ footer {
 
       .active-img {
         transform: scale(0);
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
       }
 
       .active-mail {
         transform: translate(-50%, -50%) scale(1) !important;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
       }
 
       img {
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
 
       .mail-adress {
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -332,7 +320,7 @@ footer {
 .active-menu {
   width: 184px;
   display: flex !important;
-  animation: height 0.3s linear both;
+  animation: height 0.5s linear both;
 }
 
 @keyframes height {
