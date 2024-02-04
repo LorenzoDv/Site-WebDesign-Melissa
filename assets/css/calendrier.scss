@@ -1,0 +1,389 @@
+@import "colors";
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $color1;
+}
+
+nav {
+
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 4em;
+  background-color: $color5;
+  height: 370px;
+  align-items: start;
+  padding-top: 60px;
+  position: relative;
+
+  hr {
+    background-image: url(../img/Ligne_pointilles.png);
+    background-position: bottom;
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    margin: 0;
+    height: 5px;
+    border: none;
+  }
+
+  .navtop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .navBot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+
+    #sous-menu {
+
+
+      &:before {
+        content: url("../img/Vectorfleche.svg");
+        display: block;
+        position: absolute;
+        right: -23px;
+        top: 3px;
+      }
+
+    }
+
+  }
+
+  a {
+    text-decoration: none;
+    color: $color1;
+    font-family: $font1;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    &:after {
+      content: "";
+      width: 36px;
+      height: 36px;
+      transition: all 0.2s linear;
+      opacity: 0;
+      display: block;
+      margin-right: 7px;
+    }
+
+    &:hover {
+      &:after {
+        content: url("../img/Fleur souris.svg");
+        width: 36px;
+        height: 36px;
+        transition: all 0.2s linear;
+        opacity: 1;
+        margin-right: 7px;
+        animation: rotatePicto 10s infinite linear;
+      }
+    }
+  }
+
+  @keyframes rotatePicto {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+
+  }
+
+  .circle {
+    position: absolute;
+    width: 530px;
+    height: 530px;
+    border-radius: 50%;
+    left: 50%;
+    top: -250px;
+    transform: translateX(-50%);
+
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      z-index: 20;
+      position: relative;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      font-family: $font2;
+      color: $color1;
+      top: 110px;
+      text-align: center;
+      line-height: 57px;
+    }
+
+    img {
+      position: absolute;
+      bottom: -62px;
+      width: 569px;
+      height: 569px;
+    }
+  }
+}
+
+
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 400px;
+
+  .contact {
+    bottom: -77px;
+    left: -53px;
+    width: 307px;
+    height: 324.331px;
+    cursor: url(../img/Dino.png), auto;
+    border: 19px solid $color1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: $color3;
+
+    a {
+      color: $color1;
+      text-decoration: none;
+      font-size: 28px;
+      font-family: $font1;
+      font-weight: 400;
+      cursor: url(../img/Dino.png), auto;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: -20px;
+
+      svg {
+        position: relative;
+        top: 30px;
+        left: 15px;
+      }
+    }
+
+    img {
+      width: 248px;
+      height: 262px;
+
+    }
+  }
+
+  .picto {
+
+    display: flex;
+    gap: 3em;
+    margin-left: 345px;
+    position: relative;
+    top: -58px;
+
+    border-radius: 50%;
+
+
+    .tel {
+      width: 109.3px;
+      height: 109.3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $color3;
+      border-radius: 50%;
+      border: 11.38px solid $color1;
+
+      .active-img {
+        transform: scale(0);
+        transition: all 0.3s ease-in-out;
+
+      }
+
+      .active-tel {
+        transform: translate(-50%, -50%) scale(1) !important;
+        transition: all 0.3s ease-in-out;
+
+      }
+
+      img {
+        transition: all 0.3s ease-in-out;
+
+      }
+
+      .tel-number {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        margin: 0;
+        color: $color1;
+        font-family: $font1;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .mail {
+      width: 109.3px;
+      height: 109.3px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $color3;
+      border-radius: 50%;
+      border: 11.38px solid $color1;
+
+      .active-img {
+        transform: scale(0);
+        transition: all 0.3s ease-in-out;
+
+      }
+
+      .active-mail {
+        transform: translate(-50%, -50%) scale(1) !important;
+        transition: all 0.3s ease-in-out;
+
+      }
+
+      img {
+        transition: all 0.3s ease-in-out;
+      }
+
+      .mail-adress {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        margin: 0;
+        color: $color1;
+        font-family: $font1;
+      }
+    }
+
+    .linkedin {
+      width: 109.3px;
+      height: 109.3px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $color3;
+      border-radius: 50%;
+      border: 11.38px solid $color1;
+    }
+  }
+
+  .bandeaux {
+    background-color: $color5;
+    display: flex;
+    border-top-left-radius: 50px;
+    height: 200px;
+
+    .nav-right {
+      width: 47%;
+      margin: 0 auto;
+      gap: 3em;
+
+      a {
+        width: 159.055px;
+        height: 159.055px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: $color1;
+        font-family: $font1;
+        font-size: 28px;
+        font-weight: 400;
+        background-color: $color6;
+        top: -55px;
+        position: relative;
+        border: 12px solid $color1;
+      }
+    }
+  }
+}
+
+.active-menu {
+  width: 184px;
+  display: flex !important;
+  animation: height 0.3s linear both;
+}
+
+@keyframes height {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 118px;
+    opacity: 1;
+  }
+}
+
+.sous-menu {
+  display: none;
+  background-color: #f1e7e7;
+  border-radius: 5px;
+
+  position: absolute;
+  left: 24px;
+  top: 40px;
+  transition: all 0.5s linear;
+  opacity: 0;
+  flex-direction: column;
+  z-index: 5;
+
+
+  a {
+    flex-direction: row !important;
+
+    &:after {
+      content: none !important;
+    }
+
+    &:before {
+      content: none !important;
+    }
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    display: block !important;
+    padding: 10px;
+
+    &:hover {
+      background: rgba(160, 92, 92, 0.50);
+
+      padding: 10px;
+    }
+
+  }
+}
