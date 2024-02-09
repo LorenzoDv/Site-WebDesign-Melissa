@@ -52,10 +52,12 @@ $color12: #none;
 .align-items-end {
   align-items: end;
 }
-.h100{
-    height: 100%;
+
+.h100 {
+  height: 100%;
 
 }
+
 .w25 {
   width: 25%;
 
@@ -68,6 +70,7 @@ $color12: #none;
 .w80 {
   width: 80%;
 }
+
 .font1 {
   font-family: $font1;
 }
@@ -152,6 +155,11 @@ $color12: #none;
 
 .w100 {
   width: 100%;
+}
+
+.center-arrow {
+  margin: 0 auto;
+  display: block;
 }
 
 ::-webkit-scrollbar {

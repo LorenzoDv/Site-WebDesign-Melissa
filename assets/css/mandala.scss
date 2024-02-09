@@ -8,6 +8,18 @@ body {
   background-color: $color1;
 }
 
+.ici {
+  position: absolute;
+  top: 76%;
+  left: 31%;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
 nav {
   height: 241px;
   display: flex;
@@ -21,7 +33,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -29,7 +41,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 
     #sous-menu {
@@ -130,8 +142,8 @@ nav {
 
 .presentation-mandala {
 
-  margin-top: 11em;
-  padding-left: 13em;
+  margin-top: 4em;
+  padding-left: 24em;
   position: relative;
 
   p {
@@ -141,7 +153,7 @@ nav {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    max-width: 515px;
+    max-width: 380px;
   }
 
   span {
@@ -150,8 +162,8 @@ nav {
 
   .premier-mandala {
     position: absolute;
-    right: 232px;
-    top: -189px;
+    right: 212px;
+    top: -100px;
   }
 }
 
@@ -172,6 +184,132 @@ nav {
   z-index: -1;
 }
 
+.fleche {
+  position: relative;
+  top: 300px;
+}
+
+.caligraphie {
+  margin-top: 40em;
+  display: flex;
+  align-items: center;
+  height: 851px;
+
+  .cali1 {
+    left: 490px;
+    top: -171px;
+  }
+
+  .cali2 {
+    left: 227px;
+  }
+
+  .cali3 {
+    left: 750px;
+  }
+
+  p {
+    left: 1300px;
+    top: 37px;
+    color: black;
+
+    font-family: $font1;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+}
+
+.couleur-mandala {
+  hr {
+    width: 653px;
+    height: 4px;
+    background-color: $color3;
+    border: none;
+    left: 0;
+    top: 60px;
+  }
+
+  .deuxieme-mandala {
+    position: relative;
+    left: -150px;
+    rotate: 43deg;
+  }
+
+  .txt-couleur {
+
+    top: -80px;
+
+    h4 {
+      color: black;
+      width: 355px;
+      text-align: justify;
+      font-family: $font1;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: $font1;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      width: 355px;
+      text-align: justify;
+      margin: 0;
+    }
+  }
+}
+
+.mandala-flamme {
+  p {
+    width: 409px;
+    text-align: justify;
+    font-family: $font1;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+
+.mandala-orientale {
+  display: flex;
+  justify-content: center;
+  gap: 9em;
+
+  p {
+    max-width: 595px;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-top: 6em;
+    padding-left: 5em;
+  }
+}
+
+.IDsuivante {
+  margin-top: 10em;
+  margin-bottom: 3em;
+
+  a {
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -184,7 +322,7 @@ footer {
     width: 307px;
     height: 324.331px;
     cursor: url(../img/Dino.png), auto;
-    border: 19px solid $color5;
+    border: 19px solid $color1;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -237,7 +375,7 @@ footer {
       justify-content: center;
       background-color: $color3;
       border-radius: 50%;
-      border: 11.38px solid $color5;
+      border: 11.38px solid $color1;
 
       .active-img {
         transform: scale(0);
@@ -279,7 +417,7 @@ footer {
       justify-content: center;
       background-color: $color3;
       border-radius: 50%;
-      border: 11.38px solid $color5;
+      border: 11.38px solid $color1;
 
       .active-img {
         transform: scale(0);
@@ -318,12 +456,12 @@ footer {
       justify-content: center;
       background-color: $color3;
       border-radius: 50%;
-      border: 11.38px solid $color5;
+      border: 11.38px solid $color1;
     }
   }
 
   .bandeaux {
-    background-color: $color1;
+    background-color: $color5;
     display: flex;
     border-top-left-radius: 50px;
     height: 200px;
@@ -348,7 +486,7 @@ footer {
         background-color: $color6;
         top: -55px;
         position: relative;
-        border: 12px solid $color5;
+        border: 12px solid $color1;
       }
     }
   }
@@ -366,7 +504,7 @@ footer {
     opacity: 0;
   }
   to {
-    height: 130px;
+    height: 117px;
     opacity: 1;
   }
 }

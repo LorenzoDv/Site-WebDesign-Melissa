@@ -32,10 +32,10 @@ $('.tel').mouseenter(function () {
     $('.mail img').removeClass('active-img');
     $('.mail-adress').removeClass('active-mail');
     $('.tel').addClass('bg-tel');
-    $('.tel img').attr('src', 'assets/img/Picto tel-change.svg');
+    $('.tel img').attr('src', '../assets/img/Picto tel-change.svg');
     $('.mail').removeClass('bg-mail');
-    $('.mail img').attr('src', 'assets/img/Picto mail.svg');
-    $('.linkedin img').attr('src', 'assets/img/Picto In.svg');
+    $('.mail img').attr('src', '../assets/img/Picto mail.svg');
+    $('.linkedin img').attr('src', '../assets/img/Picto In.svg');
     $('.linkedin').removeClass('bg-linkedin');
 })
 // $('.tel').mouseleave(function () {
@@ -48,11 +48,11 @@ $('.mail').mouseenter(function () {
     $('.mail-adress').addClass('active-mail');
     $('.tel img').removeClass('active-img');
     $('.tel-number').removeClass('active-tel');
-    $('.tel img').attr('src', 'assets/img/Picto tel.svg');
+    $('.tel img').attr('src', '../assets/img/Picto tel.svg');
     $('.tel').removeClass('bg-tel');
     $('.mail').addClass('bg-mail');
-    $('.mail img').attr('src', 'assets/img/Picto mail-change.svg');
-    $('.linkedin img').attr('src', 'assets/img/Picto In.svg');
+    $('.mail img').attr('src', '../assets/img/Picto mail-change.svg');
+    $('.linkedin img').attr('src', '../assets/img/Picto In.svg');
     $('.linkedin').removeClass('bg-linkedin');
 
 })
@@ -62,14 +62,14 @@ $('.mail').mouseenter(function () {
 // })
 
 $('.linkedin').mouseenter(function () {
-    $('.linkedin img').attr('src', 'assets/img/Picto In-change.svg');
+    $('.linkedin img').attr('src', '../assets/img/Picto In-change.svg');
     $('.linkedin').addClass('bg-linkedin');
     $('.tel img').removeClass('active-img');
     $('.tel-number').removeClass('active-tel');
     $('.mail img').removeClass('active-img');
     $('.mail').removeClass('bg-mail');
-    $('.mail img').attr('src', 'assets/img/Picto mail.svg');
-    $('.tel img').attr('src', 'assets/img/Picto tel.svg');
+    $('.mail img').attr('src', '../assets/img/Picto mail.svg');
+    $('.tel img').attr('src', '../assets/img/Picto tel.svg');
     $('.tel').removeClass('bg-tel');
     $('.mail-adress').removeClass('active-mail');
 });
