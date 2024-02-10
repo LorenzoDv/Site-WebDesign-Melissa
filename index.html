@@ -1,18 +1,29 @@
 <!doctype html>
 <html lang="fr">
 <head>
+    <title>Portfolio - Mélissa</title>
+    <link rel="stylesheet" href="assets/css/home.min.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio - Mélissa</title>
-    <link rel="stylesheet" href="assets/css/home.min.css">
+
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta property="og:image"
-          content="assets/img/img.png">
+
+
+    <link rel="icon" href="https://www.melissa-piana.fr/assets/img/Mandala_48px.svg">
+    <meta name="description" content="Bienvenue sur mon site de webdesign, UX/UI design">
+    <meta name="keywords" content="websign, UX/UI design, reponsive, maquette, portefolio">
     <meta name="author" content="Lorenzo Devichi">
+    <meta name="copyright" content="Mélissa Piana"/>
+    <meta property="og:title" content="Portfolio - Mélissa"/>
+    <meta property="og:url" content="https://www.melissa-piana.fr/"/>
+    <meta property="og:image" content="https://www.melissa-piana.fr/assets/img/"/>
+    <meta property="og:description" content="Bienvenue sur mon site de webdesign, UX/UI design"/>
+    <meta property="og:site_name" content="Mélissa Piana"/>
+    <meta property="og:type" content="website"/>
 </head>
 <body>
 <div class="home">
@@ -20,7 +31,7 @@
     <nav>
         <ul>
             <li>
-                <a id="sous-menu" href="portefolio.html">Portfolio</a>
+                <a id="sous-menu" href="portefolio">Portfolio</a>
                 <!--                <div class="sous-menu">-->
                 <!--                    <a href="#">Identités visuelles</a>-->
                 <!--                    <a href="#">Maquettes</a>-->
@@ -77,6 +88,7 @@
 
     </div>
     <img class="mandala-home-bottom" src="assets/img/Oriental_1.png" alt="mandala-orientale">
+    <img class="ampoule" src="assets/img/lightbulb2_1.png" alt="Ampoule idée">
     <a href="#" class="chevron-down-header2">
         <img src="assets/img/Flèche maison 2 1.svg" alt="fleche-bottom">
     </a>
@@ -93,19 +105,35 @@
             <div>
                 <h4>Logiciels</h4>
                 <div class="logo">
-                    <img src="assets/img/logoCv/Canva_svg.svg" alt="canva">
-                    <img src="assets/img/logoCv/canva.png" alt="canva">
-                    <img src="assets/img/logoCv/Ai.png" alt="canva">
-                    <img src="assets/img/logoCv/Figma.svg" alt="canva">
-                    <img src="assets/img/logoCv/Zotero.svg" alt="canva">
-                    <img src="assets/img/logoCv/QGIS 1.png" alt="canva">
-                    <img src="assets/img/logoCv/RStudio 1.png" alt="canva">
-                    <img src="assets/img/logoCv/GIMP.svg" alt="canva">
+                    <div class="taille-logo">
+                        <img src="assets/img/logoCv/Canva_svg.svg" alt="canva">
+                    </div>
+                    <div class="taille-logo">
+                        <img src="assets/img/logoCv/Photoshop.png" alt="canva">
+                    </div>
+                    <div class="taille-logo">
+                        <img src="assets/img/logoCv/Ai.png" alt="canva">
+                    </div>
+                    <div class="taille-logo">
+                        <img src="assets/img/logoCv/Figma.svg" alt="canva">
+                    </div>
+                    <div class="taille-logo">
+                        <img src="assets/img/logoCv/Zotero.svg" alt="canva">
+                    </div>
+                    <div class="taille-logo">
+                        <img class="no-border-raduis" src="assets/img/logoCv/QGIS 1.png" alt="canva">
+                    </div>
+                    <div class="taille-logo">
+                        <img src="assets/img/logoCv/RStudio 1.png" alt="canva">
+                    </div>
+                    <div class="taille-logo">
+                        <img src="assets/img/logoCv/GIMP.svg" alt="canva">
+                    </div>
                 </div>
             </div>
             <div>
                 <h4>études</h4>
-                <div>
+                <div class="etudes-cv">
                     <div>
                         <p>2019 - 2020 | <span class="red">Master 2 BioGET</span></p>
                         <span class="spaceTop">Université de Montpellier</span>
@@ -127,7 +155,7 @@
         </div>
         <div class="experience">
             <h4>Expériences</h4>
-            <div>
+            <div class="exp">
                 <div>
                     <p><span class="weight">2023 |</span> <span class="red">Auxiliaire de vie</span></p>
                     <span>Particulier employeur</span>
@@ -163,18 +191,18 @@
                     </ul>
                 </div>
                 <div>
-                    <p><span class="weight">2020 |</span> <span class="red">Ouvrière agricole</span></p>
+                    <p><span class="weight">2020 |</span> <span class="red">Ouvrière</span> agricole</p>
                     <span>Les Camarguettes</span>
                 </div>
             </div>
         </div>
-        <div>
+        <div class="lma">
             <div class="langue">
                 <h4>Langues</h4>
                 <div>
                     <div class="langue-p">
                         <p><span class="red">Anglais : courant</span></p>
-                        <p>Espagnol : Débutan</p>
+                        <p>Espagnol : Débutant</p>
                     </div>
                 </div>
             </div>
@@ -188,7 +216,7 @@
             </div>
             <div>
                 <h4>Associations</h4>
-                <div>
+                <div class="asso">
                     <div>
                         <p>2021 | Gentiana / LPO</p>
                         <span class="red300">Bénévole naturaliste</span>
@@ -254,16 +282,18 @@
             <div class="contact-picto">
                 <div class="d-flex d-flex align-items-center gap50">
                     <img src="assets/img/Picto-téléphone-home.svg" alt="phone">
-                    <p>06 50 50 50 50</p>
+                    <a href="tel:0621652555">06 21 65 25 55</a>
                 </div>
                 <div class="d-flex align-items-center gap50">
                     <img src="assets/img/Picto Mail.svg" alt="mail">
-                    <a href="mailto:melissa.piana@protonmail.com">melissa.piana@protonmail.com</a>
+                    <a href="mailto:contact@melissa-piana.fr">contact@melissa-piana.fr</a>
 
                 </div>
                 <div class="d-flex align-items-center gap50">
-                    <img src="assets/img/Picto LinkedIn.svg" alt="linkedin">
-                    <a href="https://www.linkedin.com/in/mélissa-p-8246a229b">https://www.linkedin.com/in/mélissa-p-8246a229b</a>
+                    <a href="https://www.linkedin.com/in/mélissa-p/" target="_blank">
+                        <img src="assets/img/Picto LinkedIn.svg" alt="linkedin">
+                    </a>
+                    <a href="https://www.linkedin.com/in/mélissa-p/" target="_blank">linkedin/mélissa-p</a>
                 </div>
             </div>
         </div>
@@ -274,9 +304,9 @@
     <div class="bandeaux"></div>
     <div class="contact-footer">
 
-        <a href="#">Accueil</a>
-        <a href="#">Portfolio</a>
-        <a href="#">About me</a>
+        <a href="/">Accueil</a>
+        <a href="portefolio">Portfolio</a>
+        <a href="#about">About me</a>
     </div>
 </footer>
 <script src="assets/js/scrooth.js"></script>

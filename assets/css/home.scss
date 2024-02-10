@@ -148,6 +148,9 @@ body {
             position: absolute;
             left: -1px;
             bottom: -6px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+
           }
 
 
@@ -166,6 +169,9 @@ body {
             position: absolute;
             left: 11px;
             bottom: -6px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+
           }
         }
 
@@ -182,6 +188,9 @@ body {
             position: absolute;
             left: -1px;
             bottom: -6px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+
           }
         }
 
@@ -198,6 +207,9 @@ body {
             position: absolute;
             left: -1px;
             bottom: -6px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+
           }
         }
 
@@ -214,7 +226,11 @@ body {
             position: absolute;
             left: -1px;
             bottom: -6px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+
           }
+
         }
       }
     }
@@ -245,6 +261,8 @@ body {
       background-color: $color1;
       border: none;
       bottom: 56px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
     }
 
     .profile-mandala-img {
@@ -299,6 +317,8 @@ body {
       position: absolute;
       top: -4px;
       left: 319px;
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 15px;
     }
 
     &:before {
@@ -310,6 +330,8 @@ body {
       position: absolute;
       bottom: -4px;
       left: 0;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
     }
   }
 
@@ -365,9 +387,29 @@ body {
     transform: translate(-50%, -50%);
     bottom: 50px;
   }
+
+  .ampoule {
+    position: absolute;
+    bottom: 180px;
+    left: 450px;
+    width: 220px;
+  }
 }
 
 .cv {
+  .no-border-raduis {
+    border-radius: 0 !important;
+  }
+
+  .taille-logo {
+    width: 46px;
+    height: 45px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 
   .weight {
     font-weight: 500;
@@ -379,7 +421,10 @@ body {
     display: block;
     border-radius: 30px;
     margin-top: 4em;
-    margin-bottom: 4em;
+    margin-bottom: 0;
+    width: 80%;
+    height: 150px;
+    object-fit: cover;
   }
 
   h4 {
@@ -445,6 +490,12 @@ body {
       display: flex;
       flex-direction: column;
       gap: 6em;
+
+      .etudes-cv {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
     }
 
     .logo {
@@ -463,6 +514,12 @@ body {
 
   .experience {
     width: 347px;
+
+    .exp {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
   }
 
   .langue {
@@ -479,6 +536,18 @@ body {
         }
       }
     }
+  }
+
+  .asso {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .lma {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -544,11 +613,13 @@ body {
   }
 
   textarea {
+    font-family: $font1;
     background-color: $color4;
     outline: none;
     border: none;
     border-radius: 8px;
     margin-bottom: 25px;
+    padding: 15px;
   }
 
   .send {

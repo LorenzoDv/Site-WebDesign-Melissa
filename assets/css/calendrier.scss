@@ -148,7 +148,7 @@ footer {
     color: $color1;
     font-family: $font1;
     top: 77%;
-    left: 584px;
+    left: 593px;
     z-index: 1;
   }
 
@@ -213,6 +213,8 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
+      top: -20px;
 
       svg {
         position: relative;
@@ -401,6 +403,16 @@ footer {
     color: black;
     display: block !important;
     padding: 10px;
+
+    &:nth-child(1) {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+
+    &:nth-child(3) {
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
 
     &:hover {
       background: rgba(160, 92, 92, 0.50);

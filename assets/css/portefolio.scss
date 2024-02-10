@@ -28,9 +28,7 @@
       }
 
       .active-slide-center {
-        width: 720px !important;
-        height: 660px !important;
-        transform: translate(-50%) scale(1) !important;
+        transform: translate(-50%) scale(1.2) !important;
       }
 
       .mandala {
@@ -108,7 +106,7 @@ footer {
     color: $color1;
     font-family: $font1;
     top: 77%;
-    left: 584px;
+    left: 593px;
     z-index: 1;
   }
 
@@ -173,6 +171,8 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
+      top: -20px;
 
       svg {
         position: relative;

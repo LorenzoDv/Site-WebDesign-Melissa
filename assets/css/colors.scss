@@ -175,3 +175,9 @@ $color12: #none;
 ::-webkit-scrollbar-thumb {
   background: $color6;
 }
+
+
+::selection {
+  background-color: $color6;
+  color: $color1;
+}
