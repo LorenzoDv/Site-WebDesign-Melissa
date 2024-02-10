@@ -702,8 +702,57 @@ footer {
   position: relative;
   height: 400px;
 
+  .mail-adress {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+
+    transform: translate(-50%, -50%) scale(0);
+    margin: 0;
+    color: $color1;
+    font-family: $font1;
+    top: 77%;
+    left: 584px;
+    z-index: 1;
+  }
+
+  .bg-tel {
+    background-color: $color1 !important;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .bg-mail {
+    background-color: $color1 !important;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .tel-number {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0);
+    margin: 0;
+    color: $color1;
+    font-family: $font1;
+    width: 100%;
+    text-align: center;
+    top: 77%;
+    left: 409px;
+    z-index: 1;
+  }
+
+  .active-tel {
+    transform: translate(-50%, -50%) scale(1) !important;
+    transition: all 0.5s ease-in-out;
+
+  }
+
+  .active-mail {
+    transform: translate(-50%, -50%) scale(1) !important;
+    transition: all 0.5s ease-in-out;
+
+  }
+
   .contact {
-    bottom: -77px;
+    bottom: -100px;
     left: -53px;
     width: 307px;
     height: 324.331px;
@@ -727,8 +776,6 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative;
-      top: -20px;
 
       svg {
         position: relative;
@@ -764,36 +811,22 @@ footer {
       background-color: $color3;
       border-radius: 50%;
       border: 11.38px solid $color1;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
 
       .active-img {
-        transform: scale(0);
-        transition: all 0.3s ease-in-out;
+
+        transition: all 0.5s ease-in-out;
 
       }
 
-      .active-tel {
-        transform: translate(-50%, -50%) scale(1) !important;
-        transition: all 0.3s ease-in-out;
-
-      }
 
       img {
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
       }
 
-      .tel-number {
-        transition: all 0.3s ease-in-out;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        margin: 0;
-        color: $color1;
-        font-family: $font1;
-        width: 100%;
-        text-align: center;
-      }
+
     }
 
     .mail {
@@ -806,33 +839,20 @@ footer {
       background-color: $color3;
       border-radius: 50%;
       border: 11.38px solid $color1;
+      cursor: pointer;
 
       .active-img {
-        transform: scale(0);
-        transition: all 0.3s ease-in-out;
+
+        transition: all 0.5s ease-in-out;
 
       }
 
-      .active-mail {
-        transform: translate(-50%, -50%) scale(1) !important;
-        transition: all 0.3s ease-in-out;
-
-      }
 
       img {
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
 
-      .mail-adress {
-        transition: all 0.3s ease-in-out;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        margin: 0;
-        color: $color1;
-        font-family: $font1;
-      }
+
     }
 
     .linkedin {
@@ -845,6 +865,13 @@ footer {
       background-color: $color3;
       border-radius: 50%;
       border: 11.38px solid $color1;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+
+    .bg-linkedin {
+      background-color: $color1 !important;
+      transition: all 0.5s ease-in-out;
     }
   }
 
@@ -869,12 +896,20 @@ footer {
         text-decoration: none;
         color: $color1;
         font-family: $font1;
-        font-size: 28px;
+        font-size: 22.29px;
         font-weight: 400;
         background-color: $color6;
         top: -55px;
         position: relative;
         border: 12px solid $color1;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          background-color: $color1;
+          color: $color6;
+          transition: all 0.5s ease-in-out;
+          font-size: 24px;
+        }
       }
     }
   }

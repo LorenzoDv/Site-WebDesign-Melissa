@@ -386,12 +386,20 @@ footer {
         text-decoration: none;
         color: $color1;
         font-family: $font1;
-        font-size: 28px;
+        font-size: 22.29px;
         font-weight: 400;
         background-color: $color6;
         top: -55px;
         position: relative;
         border: 12px solid $color1;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          background-color: $color1;
+          color: $color6;
+          transition: all 0.5s ease-in-out;
+          font-size: 24px;
+        }
       }
     }
   }
