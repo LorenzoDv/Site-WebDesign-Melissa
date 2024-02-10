@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -26,6 +29,7 @@
     <meta property="og:type" content="website"/>
 </head>
 <body>
+
 <div class="home">
 
     <nav>
@@ -42,7 +46,7 @@
                 <a href="#about">About me</a>
             </li>
             <li>
-                <a href="index.html#form">Contact</a>
+                <a href="/#form">Contact</a>
             </li>
             <li>
                 <a href="#"></a>
@@ -246,18 +250,18 @@
         <img class="MandalaCV" src="assets/img/Fleur_peinture_grise_pour_mimouche.png" alt="Fleur_peinture">
 
         <div class="form " id="form">
+            <form action="form-contact.php" method="post">
 
-            <form action="" method="post">
                 <h4>Formulaire de contact</h4>
                 <div class="d-flex align-items-center justify-content-beetween">
 
                     <div class="d-flex colunm w45">
                         <label for="name">Nom</label>
-                        <input type="text" name="name" id="name" required>
+                        <input type="text" name="nom" id="name" required>
                     </div>
                     <div class="d-flex colunm w45">
                         <label for="prenom">Prénom</label>
-                        <input type="text" name="name" id="prenom" required>
+                        <input type="text" name="prenom" id="prenom" required>
                     </div>
                 </div>
                 <div class="d-flex colunm ">
@@ -274,6 +278,22 @@
                 </div>
                 <div>
                     <input type="submit" class="send" value="Envoyer">
+                </div>
+                <div>
+                    <?php
+                    session_start();
+                    
+                    // Vérifiez si un message de succès est présent dans la session
+                    if (isset($_SESSION['success_message'])) {
+                        echo '<p class="succes">' . $_SESSION['success_message'] . '</p>';
+                    }
+                    // Vérifiez si un message d'erreur est présent dans la session
+                    if (isset($_SESSION['error_message'])) {
+                        echo '<p class="error">' . $_SESSION['error_message'] . '</p>';
+                    }
+                    unset($_SESSION['success_message']);
+                    unset($_SESSION['error_message']);
+                    ?>
                 </div>
             </form>
         </div>
