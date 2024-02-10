@@ -19,6 +19,7 @@ $configApi = require_once(__DIR__ . '/config/config-api.php');
 $apiKey = $configApi['api_key'];
 $partnerKey = $configApi['partner_key'];
 
+
 // Configurer les clés d'API
 $config = Brevo\Client\Configuration::getDefaultConfiguration()->setApiKey('api-key', $apiKey);
 $config = Brevo\Client\Configuration::getDefaultConfiguration()->setApiKey('partner-key', $partnerKey);
@@ -68,8 +69,9 @@ try {
     // Redirection vers la page d'accueil
     header('Location: /#form');
 } catch (Exception $e) {
-    $_SESSION['error_message'] = 'Erreur lors de l\'envoi de l\'email';
-    header('Location: /#form');
+    print_r($e->getMessage());
+    $_SESSION['error_message'] = 'Erreur lors de l\'envoi de l\'email : ' . $e->getMessage();
+//    header('Location: /#form');
     exit;
 }
 
