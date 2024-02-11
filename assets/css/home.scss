@@ -659,10 +659,10 @@ body {
   .contact {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 4em;
     position: relative;
     top: -50px;
-
+    width: 540px;
 
     h4 {
       color: $color2;
