@@ -33,8 +33,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 87%;
+    width: 84%;
     margin: 0 auto;
+    padding-left: 82px;
   }
 
   .a-left {
@@ -49,6 +50,10 @@ nav {
     width: 96%;
 
     margin-top: 4em;
+
+    .p-left {
+      padding-left: 57px;
+    }
 
     #sous-menu {
 
@@ -377,7 +382,7 @@ footer {
   border-radius: 5px;
 
   position: absolute;
-  left: 24px;
+  left: 64px;
   top: 40px;
   transition: all 0.5s linear;
   opacity: 0;

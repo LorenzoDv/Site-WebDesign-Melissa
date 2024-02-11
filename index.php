@@ -16,17 +16,17 @@ session_start();
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 
-    <link rel="icon" href="https://www.melissa-piana.fr/assets/img/Mandala_48px.svg">
+    <link rel="icon" type="image/png" href="favicon.png"/>
     <meta name="description" content="Bienvenue sur mon site de webdesign, UX/UI design">
     <meta name="keywords" content="websign, UX/UI design, reponsive, maquette, portefolio">
     <meta name="author" content="Lorenzo Devichi">
-    <meta name="copyright" content="Mélissa Piana"/>
-    <meta property="og:title" content="Portfolio - Mélissa"/>
-    <meta property="og:url" content="https://www.melissa-piana.fr/"/>
-    <meta property="og:image" content="https://www.melissa-piana.fr/assets/img/"/>
-    <meta property="og:description" content="Bienvenue sur mon site de webdesign, UX/UI design"/>
-    <meta property="og:site_name" content="Mélissa Piana"/>
-    <meta property="og:type" content="website"/>
+    <meta name="copyright" content="Mélissa Piana">
+    <meta property="og:title" content="Portfolio - Mélissa">
+    <meta property="og:url" content="https://www.melissa-piana.fr/">
+    <meta property="og:image" content="https://www.melissa-piana.fr/assets/img/">
+    <meta property="og:description" content="Bienvenue sur mon site de webdesign, UX/UI design">
+    <meta property="og:site_name" content="Mélissa Piana">
+    <meta property="og:type" content="website">
 </head>
 <body>
 
@@ -58,7 +58,7 @@ session_start();
     <div class="profile">
         <hr>
         <div class="profile-mandala-img">
-            <img class="" src="assets/img/Mandala gouttes1.png" alt="Mandala">
+            <img class="" src="assets/img/Mandala-gouttes1.png" alt="Mandala">
             <img class="img-melissa" src="assets/img/Melissa.png" alt="Melissa profiles">
         </div>
         <img class="profile-top-left" src="assets/img/MandalaAngleTopLeft.png" alt="Mandala">
@@ -73,7 +73,7 @@ session_start();
         <p id="about"></p>
     </div>
     <a href="#" class="chevron-down-header">
-        <img src="assets/img/Flèche maison 2 1.svg" alt="fleche-bottom">
+        <img src="assets/img/Fleche-maison.svg" alt="fleche-bottom">
     </a>
     <div class="about-me">
         <h3>ABOUT ME</h3>
@@ -94,7 +94,7 @@ session_start();
     <img class="mandala-home-bottom" src="assets/img/Oriental_1.png" alt="mandala-orientale">
     <img class="ampoule" src="assets/img/lightbulb2_1.png" alt="Ampoule idée">
     <a href="#" class="chevron-down-header2">
-        <img src="assets/img/Flèche maison 2 1.svg" alt="fleche-bottom">
+        <img src="assets/img/Fleche-maison.svg" alt="fleche-bottom">
     </a>
 
 </div>
@@ -110,28 +110,28 @@ session_start();
                 <h4>Logiciels</h4>
                 <div class="logo">
                     <div class="taille-logo">
-                        <img src="assets/img/logoCv/Canva_svg.svg" alt="canva">
+                        <img src="assets/img/logoCv/Canva_svg.svg" alt="logo canva">
                     </div>
                     <div class="taille-logo">
-                        <img src="assets/img/logoCv/Photoshop.png" alt="canva">
+                        <img src="assets/img/logoCv/Photoshop.png" alt="logo photoshop">
                     </div>
                     <div class="taille-logo">
-                        <img src="assets/img/logoCv/Ai.png" alt="canva">
+                        <img src="assets/img/logoCv/Ai.png" alt="logo illustrator">
                     </div>
                     <div class="taille-logo">
-                        <img src="assets/img/logoCv/Figma.svg" alt="canva">
+                        <img src="assets/img/logoCv/Figma.svg" alt="logo figma">
                     </div>
                     <div class="taille-logo">
-                        <img src="assets/img/logoCv/Zotero.svg" alt="canva">
+                        <img src="assets/img/logoCv/Zotero.svg" alt="logo zotero">
                     </div>
                     <div class="taille-logo">
-                        <img class="no-border-raduis" src="assets/img/logoCv/QGIS 1.png" alt="canva">
+                        <img class="no-border-raduis" src="assets/img/logoCv/QGIS-1.png" alt="logo qgis">
                     </div>
                     <div class="taille-logo">
-                        <img src="assets/img/logoCv/RStudio 1.png" alt="canva">
+                        <img src="assets/img/logoCv/RStudio-1.png" alt="logo rstudio">
                     </div>
                     <div class="taille-logo">
-                        <img src="assets/img/logoCv/GIMP.svg" alt="canva">
+                        <img src="assets/img/logoCv/GIMP.svg" alt="logo gimp">
                     </div>
                 </div>
             </div>
@@ -242,82 +242,83 @@ session_start();
 
         </div>
     </div>
-    <a href="#" class="chevron-down-header3">
-        <img src="assets/img/Flèche maison 2 1.svg" alt="fleche-bottom">
-    </a>
+</div>
+<a href="#" class="chevron-down-header3">
+    <img src="assets/img/Fleche-maison.svg" alt="fleche-bottom">
+</a>
 
-    <div class="formContact d-flex justify-content-center align-items-center">
-        <img class="MandalaCV" src="assets/img/Fleur_peinture_grise_pour_mimouche.png" alt="Fleur_peinture">
+<div class="formContact d-flex justify-content-center align-items-center">
+    <img class="MandalaCV" src="assets/img/Fleur_peinture_grise_pour_mimouche.png" alt="Fleur_peinture">
 
-        <div class="form " id="form">
-            <form action="form-contact.php" method="post">
+    <div class="form " id="form">
+        <form action="form-contact.php" method="post">
 
-                <h4>Formulaire de contact</h4>
-                <div class="d-flex align-items-center justify-content-beetween">
+            <h4>Formulaire de contact</h4>
+            <div class="d-flex align-items-center justify-content-beetween">
 
-                    <div class="d-flex colunm w45">
-                        <label for="name">Nom</label>
-                        <input type="text" name="nom" id="name" required>
-                    </div>
-                    <div class="d-flex colunm w45">
-                        <label for="prenom">Prénom</label>
-                        <input type="text" name="prenom" id="prenom" required>
-                    </div>
+                <div class="d-flex colunm w45">
+                    <label for="name">Nom</label>
+                    <input type="text" name="nom" id="name" required>
                 </div>
-                <div class="d-flex colunm ">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                <div class="d-flex colunm w45">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom" id="prenom" required>
                 </div>
-                <div class="d-flex colunm ">
-                    <label for="objet">Objet</label>
-                    <input type="objet" name="objet" id="objet" required>
-                </div>
-                <div class="d-flex colunm ">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                </div>
-                <div>
-                    <input type="submit" class="send" value="Envoyer">
-                </div>
-                <div>
-                    <?php
-                    session_start();
-                    
-                    // Vérifiez si un message de succès est présent dans la session
-                    if (isset($_SESSION['success_message'])) {
-                        echo '<p class="succes">' . $_SESSION['success_message'] . '</p>';
-                    }
-                    // Vérifiez si un message d'erreur est présent dans la session
-                    if (isset($_SESSION['error_message'])) {
-                        echo '<p class="error">' . $_SESSION['error_message'] . '</p>';
-                    }
-                    unset($_SESSION['success_message']);
-                    unset($_SESSION['error_message']);
-                    ?>
-                </div>
-            </form>
-        </div>
-        <div class="contact">
-            <h4>Coordonnées</h4>
-            <div class="contact-picto">
-                <div class="d-flex d-flex align-items-center gap50">
-                    <img src="assets/img/Picto-téléphone-home.svg" alt="phone">
-                    <a href="tel:0621652555">06 21 65 25 55</a>
-                </div>
-                <div class="d-flex align-items-center gap50">
-                    <img src="assets/img/Picto Mail.svg" alt="mail">
-                    <a href="mailto:contact@melissa-piana.fr">contact@melissa-piana.fr</a>
+            </div>
+            <div class="d-flex colunm ">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="d-flex colunm ">
+                <label for="objet">Objet</label>
+                <input type="text" name="objet" id="objet" required>
+            </div>
+            <div class="d-flex colunm ">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+            <div>
+                <input type="submit" class="send" value="Envoyer">
+            </div>
+            <div>
+                <?php
+                session_start();
 
-                </div>
-                <div class="d-flex align-items-center gap50">
-                    <a href="https://www.linkedin.com/in/mélissa-p/" target="_blank">
-                        <img src="assets/img/Picto LinkedIn.svg" alt="linkedin">
-                    </a>
-                    <a href="https://www.linkedin.com/in/mélissa-p/" target="_blank">linkedin/mélissa-p</a>
-                </div>
+                // Vérifiez si un message de succès est présent dans la session
+                if (isset($_SESSION['success_message'])) {
+                    echo '<p class="succes">' . $_SESSION['success_message'] . '</p>';
+                }
+                // Vérifiez si un message d'erreur est présent dans la session
+                if (isset($_SESSION['error_message'])) {
+                    echo '<p class="error">' . $_SESSION['error_message'] . '</p>';
+                }
+                unset($_SESSION['success_message']);
+                unset($_SESSION['error_message']);
+                ?>
+            </div>
+        </form>
+    </div>
+    <div class="contact">
+        <h4>Coordonnées</h4>
+        <div class="contact-picto">
+            <div class="d-flex d-flex align-items-center gap50">
+                <img src="assets/img/Picto-téléphone-home.svg" alt="phone">
+                <a href="tel:0621652555">06 21 65 25 55</a>
+            </div>
+            <div class="d-flex align-items-center gap50">
+                <img src="assets/img/Picto-Mail.svg" alt="mail">
+                <a href="mailto:contact@melissa-piana.fr">contact@melissa-piana.fr</a>
+
+            </div>
+            <div class="d-flex align-items-center gap50">
+                <a href="https://www.linkedin.com/in/mélissa-p/" target="_blank">
+                    <img src="assets/img/Picto-LinkedIn.svg" alt="linkedin">
+                </a>
+                <a href="https://www.linkedin.com/in/mélissa-p/" target="_blank">linkedin/mélissa-p</a>
             </div>
         </div>
     </div>
+</div>
 </div>
 <footer>
     <img class="chevron-down-header4" src="assets/img/Fleur_peinture_rouge_1.webp" alt="Fleur_peinture_rouge">

@@ -153,6 +153,18 @@ $color12: #none;
   width: 60%;
 }
 
+.w65 {
+
+  width: 65%;
+}
+
+.click-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 .w100 {
   width: 100%;
 }
@@ -188,6 +200,7 @@ $color12: #none;
   background-color: $color6;
   color: $color1;
   /* padding: 15px 15px; */
+  font-family: $font1;
   height: 150px;
   left: 50%;
   top: 50%;
@@ -206,6 +219,7 @@ $color12: #none;
   background-color: $color5;
   color: $color1;
   /* padding: 15px 15px; */
+  font-family: $font1;
   height: 150px;
   left: 50%;
   top: 50%;

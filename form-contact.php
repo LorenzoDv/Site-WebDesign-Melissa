@@ -10,8 +10,8 @@ require_once(__DIR__ . '/vendor/autoload.php');
 //
 //
 // return [
-//     'api_key' => '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',
-//     'partner_key' => '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',
+//     'api_key' => '',
+//     'partner_key' => '',
 // ];
 
 $configApi = require_once(__DIR__ . '/config/config-api.php');
