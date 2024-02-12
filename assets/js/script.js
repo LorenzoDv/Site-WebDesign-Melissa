@@ -122,3 +122,25 @@ $(window).scroll(function () {
         transform: 'rotate(' + scroll / 20 + 'deg)'
     });
 });
+
+
+function parallax(e) {
+    document.querySelectorAll('.para').forEach(function (move) {
+
+        // let divGet3d = $(this).attr('style').match(/transform: translate3d\((.+)px,(.+)px,(.+)px\)/);
+        // var value = parseInt(divGet3d[1]);
+        // var value2 = parseInt(divGet3d[2]);
+        // console.log(value, value2, divGet3d)
+
+
+        let moving = move.getAttribute("data-value");
+        let x = (e.clientX * moving) / 100;
+        let y = (e.clientY * moving) / 100;
+
+        move.style.transform = "translate3d(" + x + "px, " + y + "px, 10px)";
+    });
+
+}
+
+
+document.addEventListener('mousemove', parallax);

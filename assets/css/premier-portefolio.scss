@@ -134,23 +134,77 @@ nav {
 //// main portefolio ////
 .main-portefolio {
   .header {
-    height: 900px;
+    height: 950px;
   }
 
   .rond-rouge-foncé {
-    left: 13%;
+    left: 10%;
     height: 698px;
     width: 698px;
-    top: -93px;
+    top: -41px;
+    gap: 4em;
+
+
+    .left {
+      p {
+        color: $color1;
+        text-align: justify;
+        font-family: $font2;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        line-height: 40px;
+      }
+    }
+
+    .right {
+      p {
+        color: $color1;
+        text-align: justify;
+        font-family: $font1;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+
+    h2 {
+      color: $color1;
+      text-align: justify;
+      font-family: $font1;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-top: -51px;
+    }
 
     .z-index-typo {
       z-index: 3;
+      gap: 4em;
     }
 
     .back {
       z-index: 1;
       right: 75px;
       top: 100px;
+    }
+
+    h3 {
+      color: $color1;
+
+      font-family: $font1;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-align: center;
+
+      span {
+        font-weight: 500;
+      }
     }
 
     .front {
@@ -167,29 +221,84 @@ nav {
     justify-content: center;
     flex-direction: column;
 
+
     h2 {
       position: relative;
       z-index: 2;
       position: relative;
       top: -76px;
+      color: black;
+      text-align: justify;
+      font-family: $font1;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
     }
 
     .desc-color {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
       flex-wrap: wrap;
-      width: 311px;
+      top: -76px;
       gap: 10px;
+      position: relative;
+      z-index: 2;
+      left: 24px;
+      width: 90%;
+      margin: 0 auto;
+
+      span {
+        width: 46px;
+        height: 46px;
+        display: block;
+        border-radius: 50%;
+      }
 
       p {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         gap: 15px;
-        position: relative;
-        z-index: 2;
-        top: -76px;
+        width: 118px;
+
+        text-align: justify;
+        font-family: $font1;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+      }
+
+      .width-container {
+        width: 190px;
+        gap: 10px;
+      }
+
+      .color1 {
+        background-color: #F1E7E7;
+      }
+
+      .color2 {
+        background-color: #441E1E;
+      }
+
+      .color3 {
+        background-color: #A05C5C;
+      }
+
+      .color4 {
+        background-color: #191919;
+      }
+
+      .color5 {
+        background-color: #862D2D;
+      }
+
+      .color6 {
+        background-color: #000000;
       }
 
     }
@@ -206,8 +315,12 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    top: -228px;
+    top: -186px;
     left: 99px;
+
+    span {
+      font-weight: 500;
+    }
 
     img {
       z-index: 1;
@@ -222,14 +335,14 @@ nav {
       font-family: $font1;
       font-size: 20px;
       font-style: normal;
-      font-weight: 300;
+      font-weight: 200;
       line-height: normal;
     }
   }
 
   .right {
-    left: 59%;
-    top: -193px;
+    left: 54%;
+    top: -102px;
   }
 
   .arbo {
