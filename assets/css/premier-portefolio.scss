@@ -891,3 +891,81 @@ footer {
 
   }
 }
+
+////////// SLIDER //////////
+
+.swiper {
+  width: 55%;
+  height: 100%;
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  margin-top: 12em;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  top: -81px !important;
+  height: 25px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top: 4% !important;
+}
+
+.swiper-button-prev {
+
+  left: -100px !important;
+
+  &::after {
+    content: url("../img/Fleche-maison.svg") !important;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    transform: rotate(90deg);
+  }
+}
+
+.swiper-button-next {
+
+  right: -60px !important;
+
+  &::after {
+    content: url("../img/Fleche-maison.svg") !important;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(270deg);
+
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 19px !important;
+  height: 19px !important;
+  background-color: $color1 !important;
+  border: 1px solid #441E1E !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #441E1E !important;
+}
