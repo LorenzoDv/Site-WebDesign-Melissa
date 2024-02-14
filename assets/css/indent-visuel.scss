@@ -23,6 +23,16 @@ nav {
     justify-content: space-between;
     width: 70%;
     margin: 0 auto;
+
+    .fleur-right {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        right: -53px;
+        left: auto !important;
+      }
+    }
   }
 
   .navBot {
@@ -40,14 +50,39 @@ nav {
         display: block;
         position: absolute;
         right: -23px;
-        top: 3px;
+        top: -3px;
+
       }
+
+      &:hover {
+        &:before {
+          content: url("../img/Fleur souris.svg") !important;
+          display: block;
+          position: absolute;
+          right: -46px;
+          top: -7px;
+
+          width: 36px;
+          height: 36px;
+          animation: rotatePicto 10s infinite linear;
+        }
+
+        &:after {
+          content: "" !important;
+          right: -44px;
+          top: 0px;
+
+        }
+      }
+
 
     }
 
   }
 
+
   a {
+    position: relative;
     text-decoration: none;
     color: $color1;
     font-family: $font1;
@@ -66,6 +101,8 @@ nav {
       opacity: 0;
       display: block;
       margin-right: 7px;
+      position: absolute;
+      left: -46px;
     }
 
     &:hover {
@@ -81,16 +118,6 @@ nav {
     }
   }
 
-  @keyframes rotatePicto {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    100% {
-      transform: rotate(360deg);
-    }
-
-  }
 
   .circle {
     position: absolute;
@@ -474,4 +501,15 @@ footer {
     }
 
   }
+}
+
+@keyframes rotatePicto {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
 }
