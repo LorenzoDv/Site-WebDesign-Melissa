@@ -1,5 +1,6 @@
 @import "colors";
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
   margin: 0;
@@ -27,6 +28,15 @@ nav {
     justify-content: space-between;
     width: 70%;
     margin: 0 auto;
+    .fleur-right {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        right: -53px;
+        left: auto !important;
+      }
+    }
   }
 
   .navBot {
@@ -48,6 +58,26 @@ nav {
         width: 14px;
       }
 
+      &:hover {
+        &:before {
+          content: url("../img/Fleur souris.svg") !important;
+          display: block;
+          position: absolute;
+          right: -46px;
+          top: -3px;
+
+          width: 36px;
+          height: 36px;
+          animation: rotatePicto 10s infinite linear;
+        }
+
+        &:after {
+          content: "" !important;
+          right: -44px;
+          top: 0px;
+
+        }
+      }
     }
 
   }
@@ -149,12 +179,19 @@ nav {
       p {
         color: $color1;
         text-align: justify;
-        font-family: $font2;
+        font-family: "Philosopher", sans-serif;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        line-height: 40px;
+        line-height: 29px;
+      }
+
+      .phil {
+        font-family: "Philosopher", sans-serif;
+        margin-top: 8px;
+        display: block;
+        font-size: 24px;
       }
     }
 
@@ -162,11 +199,19 @@ nav {
       p {
         color: $color1;
         text-align: justify;
-        font-family: $font1;
+        font-family: "Josefin Sans", sans-serif;
         font-size: 20px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+      }
+
+      .jos {
+        font-family: "Josefin Sans", sans-serif;
+        margin-top: 8px;
+        display: block;
+        font-size: 24px;
+        font-weight: 400;
       }
     }
 
@@ -194,16 +239,16 @@ nav {
 
     h3 {
       color: $color1;
-
-      font-family: $font1;
       font-size: 20px;
       font-style: normal;
       font-weight: 300;
       line-height: normal;
       text-align: center;
+      font-family: $font1;
 
       span {
         font-weight: 500;
+
       }
     }
 
@@ -324,8 +369,8 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    top: -149px;
-    left: 133px;
+    top: -201px;
+    left: 111px;
 
     span {
       font-weight: 500;
@@ -333,6 +378,7 @@ nav {
 
     img {
       z-index: 1;
+      width: 600px;
     }
 
     p {
@@ -352,21 +398,23 @@ nav {
   .right {
     left: 54%;
     top: -102px;
+
   }
 
   .arbo {
     height: 4475px;
     display: flex;
+    margin-top: 7em;
 
     .red {
-      background-color: #1D1D1B;
+      background-color: #9e9d9b;
       width: 90%;
 
       img {
         display: block;
         margin: 0 auto;
         position: absolute;
-        left: 53%;
+        left: 58%;
         transform: translate(-50%, -50%);
         top: 50%;
       }
@@ -377,7 +425,7 @@ nav {
         justify-content: center;
         width: 244px;
         height: 244px;
-        border: 10px solid $color1;
+        border: 13px solid #E9E8E6;
         border-radius: 50%;
         position: relative;
         top: -122px;
@@ -386,7 +434,7 @@ nav {
         h2 {
           position: relative;
           z-index: 2;
-          color: $color1;
+          color: #1D1D1B;
           text-align: center;
           font-family: $font1;
           font-size: 24px;
@@ -403,17 +451,17 @@ nav {
         justify-content: center;
         width: 244px;
         height: 244px;
-        border: 10px solid $color1;
+        border: 18px solid #9E9D9B;
         border-radius: 50%;
         position: absolute;
         bottom: -100px;
-        right: -395px;
+        right: -375px;
         margin-right: 15em;
 
         h2 {
           position: relative;
           z-index: 2;
-          color: $color1;
+          color: #1D1D1B;
           text-align: center;
           font-family: $font1;
           font-size: 24px;
@@ -426,7 +474,7 @@ nav {
     }
 
     .grey {
-      background: #9E9D9B;
+      background: #1D1D1B;
       width: 15%;
     }
   }
@@ -444,11 +492,34 @@ nav {
   video {
     max-width: 1609px;
   }
+
+  p {
+    color: #FFF;
+    font-family: $font1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 70px;
+  }
 }
 
+.m-suivante {
+  max-width: 260px;
+  margin: 0 auto;
+  margin-top: 6em;
+  display: block;
+}
 
 .travaillons-ensemble {
   margin-top: 5em;
+
+  a {
+    text-decoration: none;
+    max-width: 660px;
+    display: block;
+    margin: 0 auto;
+  }
 
   .travaillons {
     display: flex;
@@ -456,7 +527,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: #6E6554;
+    background-color: #F5B12F;
     max-width: 660px;
     border-radius: 100px;
     margin: 0 auto;
@@ -465,12 +536,12 @@ nav {
 
     h5 {
       margin: 0;
-      color: $color1;
+      color: #1D1D1B;
       text-align: justify;
       font-family: $font1;
-      font-size: 24px;
+      font-size: 23px;
       font-style: normal;
-      font-weight: 300;
+      font-weight: 400;
       line-height: normal;
     }
   }
@@ -482,7 +553,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background: rgba(29, 29, 27, 0.20);
+    background: #EFD39F;
     border-radius: 100px;
     margin: 0 auto;
     position: relative;
@@ -511,12 +582,12 @@ footer {
   }
 
   .bg-tel {
-    background-color: $color1 !important;
+    background-color: #E9E8E6 !important;
     transition: all 0.5s ease-in-out;
   }
 
   .bg-mail {
-    background-color: $color1 !important;
+    background-color: #E9E8E6 !important;
     transition: all 0.5s ease-in-out;
   }
 
@@ -599,7 +670,7 @@ footer {
     border-radius: 50%;
 
 
-    .tel {
+    .tel-oxalis {
       width: 109.3px;
       height: 109.3px;
       display: flex;
@@ -626,7 +697,7 @@ footer {
 
     }
 
-    .mail {
+    .mail-oxalis {
       width: 109.3px;
       height: 109.3px;
       position: relative;
@@ -652,7 +723,7 @@ footer {
 
     }
 
-    .linkedin {
+    .linkedin-oxalis {
       width: 109.3px;
       height: 109.3px;
       position: relative;
@@ -667,7 +738,7 @@ footer {
     }
 
     .bg-linkedin {
-      background-color: $color1 !important;
+      background-color: #E9E8E6 !important;
       transition: all 0.5s ease-in-out;
     }
   }
@@ -703,13 +774,21 @@ footer {
 
         &:hover {
           background-color: #E9E8E6;
-          color: #F5B12F;
+          color: #000;
           transition: all 0.5s ease-in-out;
           font-size: 24px;
         }
       }
     }
   }
+}
+
+.circle-yellow {
+  width: 246px;
+  height: 245px;
+  border-radius: 50%;
+  background-color: #F5B12F;
+  position: absolute;
 }
 
 .active-menu {
@@ -731,7 +810,7 @@ footer {
 
 .sous-menu {
   display: none;
-  background-color: #F5B131;
+  background-color: #FFFFFF;
   border-radius: 5px;
 
   position: absolute;
@@ -773,7 +852,7 @@ footer {
     }
 
     &:hover {
-      background: #9E9D9B;
+      background: #F5B131;
 
       padding: 10px;
     }

@@ -28,8 +28,10 @@ session_start();
     <meta property="og:site_name" content="Mélissa Piana">
     <meta property="og:type" content="website">
 </head>
-<body>
-
+<body id="top">
+<a href="#top" class="click-to-top">
+    <img src="assets/img/Top_fleche.png" alt="top fleche" class="arrow-up">
+</a>
 <div class="home">
 
     <nav>
@@ -64,13 +66,17 @@ session_start();
         <img class="profile-top-left" src="assets/img/MandalaAngleTopLeft.png" alt="Mandala">
     </div>
     <div class="bonjour">
-        <h1>Bonjour !</h1>
-        <h2>Je m'appelle Mélissa Piana</h2>
-        <p>Je suis en formation de webdesign et je cherche une alternance pour apprendre le métier.<br><br>
+        <div>
+            <h1>Bonjour !</h1>
+            <h2>Je m'appelle Mélissa Piana</h2>
+            <p>Je suis en formation de webdesign et je cherche une alternance pour apprendre le métier.<br><br>
 
-            Mon parcours tournait jusqu’à présent autour des plantes et j’ai décidé de changer.<br>
-            Je me lance à fond dans cette nouvelle voie qui me passionne finalement depuis toujours : la création.</p>
-        <p id="about"></p>
+                Mon parcours tournait jusqu’à présent autour des plantes et j’ai décidé de changer.<br>
+                Je me lance à fond dans cette nouvelle voie qui me passionne finalement depuis toujours : la création.
+            </p>
+            <p id="about"></p>
+        </div>
+
     </div>
     <a href="#" class="chevron-down-header">
         <img src="assets/img/Fleche-maison.svg" alt="fleche-bottom">

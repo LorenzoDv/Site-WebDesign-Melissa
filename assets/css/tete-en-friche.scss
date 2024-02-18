@@ -37,6 +37,16 @@ nav {
     justify-content: space-between;
     width: 70%;
     margin: 0 auto;
+
+    .fleur-right {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        right: -53px;
+        left: auto !important;
+      }
+    }
   }
 
   .navBot {
@@ -57,6 +67,26 @@ nav {
         top: 3px;
       }
 
+      &:hover {
+        &:before {
+          content: url("../img/Fleur souris.svg") !important;
+          display: block;
+          position: absolute;
+          right: -46px;
+          top: -3px;
+
+          width: 36px;
+          height: 36px;
+          animation: rotatePicto 10s infinite linear;
+        }
+
+        &:after {
+          content: "" !important;
+          right: -44px;
+          top: 0px;
+
+        }
+      }
     }
 
   }
@@ -942,7 +972,7 @@ footer {
     opacity: 0;
   }
   to {
-    height: 118px;
+    height: 117px;
     opacity: 1;
   }
 }

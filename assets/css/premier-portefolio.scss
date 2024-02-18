@@ -27,6 +27,16 @@ nav {
     justify-content: space-between;
     width: 70%;
     margin: 0 auto;
+
+    .fleur-right {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        right: -53px;
+        left: auto !important;
+      }
+    }
   }
 
   .navBot {
@@ -48,6 +58,26 @@ nav {
         width: 14px;
       }
 
+      &:hover {
+        &:before {
+          content: url("../img/Fleur souris.svg") !important;
+          display: block;
+          position: absolute;
+          right: -46px;
+          top: -3px;
+
+          width: 36px;
+          height: 36px;
+          animation: rotatePicto 10s infinite linear;
+        }
+
+        &:after {
+          content: "" !important;
+          right: -44px;
+          top: 0px;
+
+        }
+      }
     }
 
   }
@@ -560,8 +590,22 @@ nav {
   }
 }
 
+.m-suivante {
+  max-width: 260px;
+  margin: 0 auto;
+  margin-top: 6em;
+  display: block;
+}
+
 .travaillons-ensemble {
   margin-top: 5em;
+
+  a {
+    text-decoration: none;
+    max-width: 660px;
+    display: block;
+    margin: 0 auto;
+  }
 
   .travaillons {
     display: flex;
@@ -599,6 +643,7 @@ nav {
     position: relative;
     top: -44.5px;
     left: 100px;
+    z-index: -1;
   }
 }
 
@@ -894,10 +939,38 @@ footer {
 
 ////////// SLIDER //////////
 
-.swiper {
+//.swiper {
+//  width: 55%;
+//  height: 100%;
+//}
+//
+//.swiper-slide {
+//  text-align: center;
+//  font-size: 18px;
+//  background: #fff;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//}
+//
+//.swiper-slide img {
+//  display: block;
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//}
+
+////////// SLIDER //////////
+.slider {
   width: 55%;
   height: 100%;
-  overflow: visible !important;
+  margin: 0 auto;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
@@ -909,10 +982,6 @@ footer {
   align-items: center;
 }
 
-.swiper-wrapper {
-  margin-top: 12em;
-}
-
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -921,12 +990,12 @@ footer {
 }
 
 .swiper-pagination {
-  top: -81px !important;
+  top: -88px !important;
   height: 25px;
 }
 
 .swiper-button-next, .swiper-button-prev {
-  top: 4% !important;
+  top: 250px !important;
 }
 
 .swiper-button-prev {
@@ -967,5 +1036,5 @@ footer {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #441E1E !important;
+  background-color: $color3 !important;
 }

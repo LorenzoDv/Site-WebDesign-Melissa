@@ -35,6 +35,16 @@ nav {
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
+
+    .fleur-right {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        right: -53px;
+        left: auto !important;
+      }
+    }
   }
 
   .navBot {
@@ -56,6 +66,26 @@ nav {
         width: 14px;
       }
 
+      &:hover {
+        &:before {
+          content: url("../img/Fleur souris.svg") !important;
+          display: block;
+          position: absolute;
+          right: -46px;
+          top: -3px;
+
+          width: 36px;
+          height: 36px;
+          animation: rotatePicto 10s infinite linear;
+        }
+
+        &:after {
+          content: "" !important;
+          right: -44px;
+          top: 0px;
+
+        }
+      }
     }
 
   }
@@ -189,6 +219,10 @@ nav {
   top: 300px;
 }
 
+.or {
+  width: 850px;
+}
+
 .caligraphie {
   margin-top: 40em;
   display: flex;
@@ -196,8 +230,10 @@ nav {
   height: 851px;
 
   .cali1 {
-    left: 490px;
-    top: -171px;
+    left: 472px;
+    top: -223px;
+    width: 456px;
+    height: 465px;
   }
 
   .cali2 {
@@ -223,6 +259,9 @@ nav {
 }
 
 .couleur-mandala {
+  margin-top: 4em;
+  margin-bottom: 2em;
+
   hr {
     width: 653px;
     height: 4px;
@@ -240,7 +279,7 @@ nav {
 
   .txt-couleur {
 
-    top: -80px;
+    top: -200px;
 
     h4 {
       color: black;
@@ -264,12 +303,16 @@ nav {
       text-align: justify;
       margin: 0;
     }
+
+    span {
+      font-weight: 500;
+    }
   }
 }
 
 .mandala-flamme {
   p {
-    width: 409px;
+    width: 297px;
     text-align: justify;
     font-family: $font1;
     font-size: 24px;
@@ -277,23 +320,40 @@ nav {
     font-weight: 300;
     line-height: normal;
   }
+
+  hr {
+    width: 297px;
+    height: 4px;
+    background: $color3;
+    border: none;
+  }
 }
 
 .mandala-orientale {
   display: flex;
   justify-content: space-between;
 
+  hr {
+    width: 300px;
+    height: 4px;
+    background: $color3;
+    border: none;
+    position: relative;
+    left: 150px;
+    top: 250px;
+  }
 
   p {
-    max-width: 595px;
+    max-width: 316px;
     text-align: justify;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    padding-top: 6em;
-    padding-left: 5em;
+    position: relative;
+    left: 150px;
+    top: 250px;
   }
 }
 
@@ -302,6 +362,10 @@ nav {
   margin-bottom: 3em;
 
   a {
+    width: 302px;
+    margin: 0 auto;
+    display: block;
+
     img {
       margin: 0 auto;
       display: block;

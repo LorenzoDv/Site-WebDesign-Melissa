@@ -24,6 +24,14 @@ body {
     z-index: 2;
     overflow: hidden;
     top: 81px;
+    @media screen and (max-width: 1048px) {
+
+      top: 294px;
+
+    }
+    @media screen and (max-width: 846px) {
+      top: 220px;
+    }
 
     ul {
       display: flex;
@@ -130,7 +138,15 @@ body {
         &:nth-child(1) {
           position: relative;
           right: 500px;
-
+          @media screen and (max-width: 1456px) {
+            right: 400px;
+          }
+          @media screen and (max-width: 1048px) {
+            right: 250px;
+          }
+          @media screen and (max-width: 882px) {
+            right: 90px;
+          }
           //a {
           //  &:before {
           //    content: url("../img/chevron-down-solid.svg");
@@ -160,6 +176,18 @@ body {
           position: relative;
           right: 400px;
 
+          @media screen and (max-width: 1456px) {
+            right: 300px;
+          }
+          @media screen and (max-width: 1048px) {
+
+            right: 350px;
+
+          }
+          @media screen and (max-width: 882px) {
+            right: 176px;
+          }
+
           &:after {
             content: "";
             width: 500px;
@@ -178,6 +206,17 @@ body {
         &:nth-child(3) {
           position: relative;
           right: 300px;
+          @media screen and (max-width: 1456px) {
+            right: 200px;
+          }
+          @media screen and (max-width: 1048px) {
+
+            right: 450px;
+
+          }
+          @media screen and (max-width: 882px) {
+            right: 239px;
+          }
 
           &:after {
             content: "";
@@ -198,11 +237,15 @@ body {
           position: relative;
           right: 200px;
 
+
           &:after {
             content: "";
             width: 500px;
             height: 3px;
             background-color: #f1e7e7;
+            @media screen and (max-width: 1456px) {
+              background-color: transparent !important;
+            }
             display: block;
             position: absolute;
             left: -1px;
@@ -217,11 +260,15 @@ body {
           position: relative;
           right: 100px;
 
+
           &:after {
             content: "";
             width: 500px;
             height: 3px;
             background-color: #f1e7e7;
+            @media screen and (max-width: 1456px) {
+              background-color: transparent !important;
+            }
             display: block;
             position: absolute;
             left: -1px;
@@ -245,7 +292,28 @@ body {
     top: -317px;
     left: -23%;
     z-index: 1;
-
+    @media screen and (max-width: 1468px) {
+      height: 1732px;
+    }
+    @media screen and (max-width: 1342px) {
+      height: 1583px;
+    }
+    @media screen and (max-width: 1048px) {
+      height: 1056px;
+      width: 105%;
+      left: -15%;
+      background-color: #A05C5C;
+    }
+    @media screen and (max-width: 902px) {
+      height: 1001px;
+      width: 105%;
+    }
+    @media screen and (max-width: 882px) {
+      left: -6%;
+    }
+    @media screen and (max-width: 846px) {
+      height: 912px;
+    }
   }
 
   .profile {
@@ -263,6 +331,9 @@ body {
       bottom: 56px;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
+      @media screen and (max-width: 1048px) {
+        display: none;
+      }
     }
 
     .profile-mandala-img {
@@ -282,6 +353,29 @@ body {
     z-index: 4;
     padding-left: 320px;
     padding-bottom: 46px;
+    @media screen and (max-width: 1508px) {
+      padding-left: 400px;
+    }
+    @media screen and (max-width: 1288px) {
+      padding-left: 300px;
+    }
+    @media screen and (max-width: 1048px) {
+      position: relative !important;
+      padding-bottom: 0 !important;
+      top: 0 !important;
+      width: 835px;
+      height: 835px;
+      padding-left: 0 !important;
+      margin: 0 auto;
+      /* padding-top: 18em; */
+      background-color: #441E1E;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: -1;
+    }
 
     h1 {
       margin-top: 50px;
@@ -290,6 +384,11 @@ body {
       font-weight: 400;
       font-size: 48px;
       margin-bottom: 0;
+      @media screen and (max-width: 1048px) {
+        max-width: 300px;
+        font-size: 36px;
+
+      }
     }
 
     h2 {
@@ -299,6 +398,11 @@ body {
       font-weight: 400;
       font-size: 44px;
       margin-bottom: 50px;
+      @media screen and (max-width: 1048px) {
+        max-width: 300px;
+        font-size: 36px;
+        margin-bottom: 0;
+      }
     }
 
     p {
@@ -306,6 +410,10 @@ body {
       font-family: $font1;
       font-weight: 400;
       font-size: 20px;
+      @media screen and (max-width: 1508px) {
+        max-width: 450px;
+        text-align: justify;
+      }
     }
 
     &:after {
@@ -319,6 +427,9 @@ body {
       left: 319px;
       border-bottom-left-radius: 15px;
       border-top-left-radius: 15px;
+      @media screen and (max-width: 1048px) {
+        display: none;
+      }
     }
 
     &:before {
@@ -332,6 +443,9 @@ body {
       left: 0;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
+      @media screen and (max-width: 1048px) {
+        display: none;
+      }
     }
   }
 
@@ -341,6 +455,9 @@ body {
     left: 50%;
     z-index: 8;
     transform: translate(-50%, -50%);
+    @media screen and (max-width: 1048px) {
+      display: none;
+    }
   }
 
   .about-me {
@@ -350,6 +467,11 @@ body {
     left: 290px;
 
     z-index: 3;
+    @media screen and (max-width: 1048px) {
+      position: relative !important;
+      top: 0 !important;
+      left: 0 !important;
+    }
 
     h3 {
       font-family: $font2;
@@ -378,6 +500,9 @@ body {
     z-index: 8;
     right: -365px;
     rotate: 90deg;
+    @media screen and (max-width: 1448px) {
+      display: none;
+    }
   }
 
   .chevron-down-header2 {
@@ -386,6 +511,7 @@ body {
     z-index: 8;
     transform: translate(-50%, -50%);
     bottom: 50px;
+
   }
 
   .ampoule {
@@ -483,8 +609,8 @@ body {
 
   .cv-experience {
     display: flex;
-    justify-content: center;
-    gap: 14em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
     .left {
       display: flex;

@@ -1,12 +1,19 @@
 $('#sous-menu').hover(function () {
     $('.sous-menu').addClass('active-menu');
 });
-// $('#sous-menu').mouseleave(function () {
-//     $('.sous-menu').removeClass('active-menu');
-// });
+$('#sous-menu').mouseleave(function () {
+    $('.sous-menu').addClass('active-menu');
+});
 $('.sous-menu').mouseleave(function () {
     $('.sous-menu').removeClass('active-menu');
 });
+
+
+// $("#sous-menu").mouseleave(function () {
+//     if (!$('.sous-menu').hasClass('active-menu')) {
+//         $('.sous-menu').removeClass('active-menu');
+//     }
+// });
 
 $('.slidePortefolio').each(function () {
     $(this).find('.mandala').hover(function () {
@@ -50,6 +57,9 @@ $('.tel').mouseenter(function () {
         $('.linkedin').removeClass('bg-linkedin');
     }, 10000);
 })
+//detect if mouse in on sous-menu or not
+
+
 // $('.tel').mouseleave(function () {
 //     $('.tel img').removeClass('active-img');
 //     $('.tel-number').removeClass('active-tel');
@@ -115,6 +125,60 @@ $('.linkedin').mouseenter(function () {
         $('.linkedin').removeClass('bg-linkedin');
     }, 10000);
 });
+
+
+$('.tel-oxalis').mouseenter(function () {
+    $('.tel-oxalis img').attr('src', '../assets/img/Picto-tel-grey');
+    $('.tel-oxalis').addClass('bg-tel');
+    $('.tel-number').addClass('active-tel');
+    $('.mail-oxalis').removeClass('bg-mail');
+    $('.mail-adress').removeClass('active-mail');
+    $('.linkedin-oxalis').removeClass('bg-linkedin');
+    $('.mail-oxalis img').attr('src', '../assets/img/Picto-mail-grey1.svg');
+    $('.linkedin-oxalis img').attr('src', '../assets/img/Picto In.svg');
+    setTimeout(function () {
+        $('.tel-oxalis img').attr('src', '../assets/img/Picto tel.svg');
+        $('.tel-oxalis').removeClass('bg-tel');
+        $('.tel-number').removeClass('active-tel');
+
+    }, 10000);
+});
+
+$('.mail-oxalis').mouseenter(function () {
+
+    $('.mail-oxalis img').attr('src', '../assets/img/Picto-mail-grey.svg');
+    $('.mail-oxalis').addClass('bg-mail');
+    $('.mail-adress').addClass('active-mail');
+    $('.tel-oxalis img').attr('src', '../assets/img/Picto tel.svg');
+    $('.tel-oxalis').removeClass('bg-tel');
+    $('.tel-number').removeClass('active-tel');
+    $('.linkedin-oxalis img').attr('src', '../assets/img/Picto In.svg');
+    $('.linkedin-oxalis').removeClass('bg-linkedin');
+    setTimeout(function () {
+        $('.mail-oxalis img').attr('src', '../assets/img/Picto-mail-grey1.svg');
+        $('.mail-oxalis').removeClass('bg-mail');
+        $('.mail-adress').removeClass('active-mail');
+    }, 10000);
+
+});
+
+$('.linkedin-oxalis').mouseenter(function () {
+    $('.tel-oxalis img').attr('src', '../assets/img/Picto tel.svg');
+    $('.tel-oxalis').removeClass('bg-tel');
+    $('.tel-number').removeClass('active-tel');
+    $('.linkedin-oxalis img').attr('src', '../assets/img/Picto-In-grey.svg');
+    $('.linkedin-oxalis').addClass('bg-linkedin');
+    $('.mail-oxalis').removeClass('bg-mail');
+    $('.mail-adress').removeClass('active-mail');
+    $('.mail-oxalis img').attr('src', '../assets/img/Picto-mail-grey1.svg');
+    setTimeout(function () {
+        $('.linkedin-oxalis img').attr('src', '../assets/img/Picto In.svg');
+        $('.linkedin-oxalis').removeClass('bg-linkedin');
+    }, 10000);
+
+});
+
+
 //faire rotate MandalaCV en fonction du scroll
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
@@ -145,16 +209,39 @@ function parallax(e) {
 
 document.addEventListener('mousemove', parallax);
 
-
 var swiper = new Swiper(".mySwiper", {
-    cssMode: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+
+    speed: 800,
+    autoHeight: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     pagination: {
         el: ".swiper-pagination",
+        clickable: true,
     },
-    mousewheel: true,
     keyboard: true,
 });
+
+// var swiper = new Swiper(".mySwiper", {
+//
+//     autoHeight: true,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+//
+// });

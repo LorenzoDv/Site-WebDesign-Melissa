@@ -36,6 +36,17 @@ nav {
     width: 84%;
     margin: 0 auto;
     padding-left: 82px;
+
+    .fleur-right {
+      position: relative;
+      left: 36px;
+
+      &::after {
+        position: absolute;
+        right: -53px;
+        left: auto !important;
+      }
+    }
   }
 
   .a-left {
@@ -66,6 +77,26 @@ nav {
         top: 3px;
       }
 
+      &:hover {
+        &:before {
+          content: url("../img/Fleur souris.svg") !important;
+          display: block;
+          position: absolute;
+          right: -46px;
+          top: -3px;
+
+          width: 36px;
+          height: 36px;
+          animation: rotatePicto 10s infinite linear;
+        }
+
+        &:after {
+          content: "" !important;
+          right: -44px;
+          top: 0px;
+
+        }
+      }
     }
 
   }
@@ -426,4 +457,15 @@ footer {
     }
 
   }
+}
+
+@keyframes rotatePicto {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
 }
