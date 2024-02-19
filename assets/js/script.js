@@ -65,11 +65,12 @@ $('.tel').mouseenter(function () {
 //     $('.tel-number').removeClass('active-tel');
 // })
 
-//hide class succes after 5s
+// CACHER MESSAGE D'ERREUR OU DE SUCCES
 setTimeout(function () {
     $('.succes').hide();
     $('.error').hide();
 }, 2500);
+
 $('.mail').mouseenter(function () {
     $('.mail img').addClass('active-img');
     $('.mail-adress').addClass('active-mail');

@@ -254,7 +254,7 @@ session_start();
 </a>
 
 <div class="formContact d-flex justify-content-center align-items-center">
-    <img class="MandalaCV" src="assets/img/Fleur_peinture_grise_pour_mimouche.png" alt="Fleur_peinture">
+    <img class="MandalaCV" src="assets/img/Fleur_peinture_grise1.webp" alt="Fleur_peinture">
 
     <div class="form " id="form">
         <form action="form-contact.php" method="post">
@@ -292,7 +292,7 @@ session_start();
 
                 // Vérifiez si un message de succès est présent dans la session
                 if (isset($_SESSION['success_message'])) {
-                    echo '<p class="succes">' . $_SESSION['success_message'] . '</p>';
+                    echo '<p class="succes"></p>';
                 }
                 // Vérifiez si un message d'erreur est présent dans la session
                 if (isset($_SESSION['error_message'])) {

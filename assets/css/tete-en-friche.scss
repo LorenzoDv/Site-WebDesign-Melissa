@@ -277,6 +277,7 @@ nav {
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      min-height: 150px;
     }
 
     .segoe {
@@ -284,7 +285,7 @@ nav {
 
       text-align: justify;
       font-family: "Segoe UI", Arial, sans-serif;
-      font-size: 24px;
+      font-size: 23px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -301,7 +302,7 @@ nav {
 
       hr {
         background-color: #862d2d;
-        width: 91% !important;
+        width: 94% !important;
         height: 4px;
         border: none;
         margin-left: 0 !important;
@@ -326,7 +327,10 @@ nav {
         height: 4px;
         border: none;
       }
-
+h3{
+  position: relative;
+  left: -110px;
+}
       span {
         width: 48.033px;
         height: 48px;
@@ -448,7 +452,9 @@ nav {
     background-size: cover;
     width: 83%;
     margin: 0 auto;
-
+    @media screen and (max-width: 1690px) {
+            width: 90%;
+    }
     .logo-tete-en-friche {
       background-color: $color1;
       width: 800px;
@@ -494,7 +500,9 @@ nav {
       rotate: -3deg;
       right: 664px;
       top: 269px;
-
+      @media screen and (max-width: 1690px) {
+        width: 500px;
+      }
     }
 
     .txt2 {
@@ -502,6 +510,10 @@ nav {
       right: 1225px;
       top: 446px;
 
+      @media screen and (max-width: 1690px) {
+        right: 1172px;
+        top: 442px;
+      }
       color: $color1;
       font-family: $font1;
       font-size: 24px;
@@ -564,6 +576,9 @@ nav {
 
     img {
       width: 83%;
+      @media screen and (max-width: 1690px) {
+        width: 90%;
+      }
       margin: 0 auto;
       display: block;
       border-bottom-left-radius: 5px;
@@ -615,10 +630,13 @@ nav {
     height: 2440.551px;
     background-color: $color5;
     width: 83%;
+    @media screen and (max-width: 1690px) {
+      width: 90%;
+    }
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    top: -5px;
+    top: -6px;
     border-radius: 5px;
   }
 
@@ -650,6 +668,7 @@ nav {
       margin: 0 auto;
       display: flex;
       justify-content: space-evenly;
+      flex-wrap: wrap;
     }
   }
 
