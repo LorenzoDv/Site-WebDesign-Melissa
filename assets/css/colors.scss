@@ -32,6 +32,74 @@ $color10: #none;
 $color11: #none;
 $color12: #none;
 
+/* Texte défilant */
+.messagedefilant {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #e8be23;
+  font-family: 'Montserrat';
+}
+
+.messagedefilant div {
+  position: absolute;
+  min-width: 100%; /* au minimum la largeur du conteneur */
+}
+
+.messagedefilant div span,
+.messagedefilant div:after {
+  position: relative;
+  display: inline-block;
+  font-size: 23px;
+  white-space: nowrap;
+  top: 0;
+}
+
+.messagedefilant div span {
+  animation: defilement 10s infinite linear;
+  font-size: 23px;
+}
+
+.messagedefilant div:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: attr(data-text);
+  animation: defilement2 10s infinite linear;
+}
+
+@keyframes defilement {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+
+@keyframes defilement2 {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+
+@keyframes defilement {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
 
 .d-flex {
   display: flex;

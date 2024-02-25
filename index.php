@@ -29,6 +29,10 @@ session_start();
     <meta property="og:type" content="website">
 </head>
 <body id="top">
+<div class="messagedefilant">
+    <div data-text="Site en cours de construction"><span>Site en cours de construction</span></div>
+</div>
+
 <a href="#top" class="click-to-top">
     <img src="assets/img/Top_fleche.png" alt="top fleche" class="arrow-up">
 </a>

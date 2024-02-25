@@ -21,22 +21,29 @@ body {
     justify-content: end;
     align-items: center;
     position: relative;
-    z-index: 2;
+    z-index: 9;
     overflow: hidden;
     top: 81px;
     @media screen and (max-width: 1048px) {
-
-      top: 294px;
-
+      top: 257px;
     }
     @media screen and (max-width: 846px) {
       top: 220px;
+    }
+    @media screen and (max-width: 662px) {
+      top: 159px;
+    }
+    @media screen and (max-width: 426px) {
+      top: 97px;
     }
 
     ul {
       display: flex;
       flex-direction: column;
       gap: 4em;
+      @media screen and (max-width: 426px) {
+        gap: 3em;
+      }
 
       li {
         list-style: none;
@@ -102,8 +109,14 @@ body {
           align-items: center;
           gap: 9px;
           position: relative;
+          @media screen and (max-width: 474px) {
+            font-size: 15px;
+          }
 
           &:after {
+            @media screen and (max-width: 1048px) {
+              content: none;
+            }
             content: "";
             width: 36px;
             height: 36px;
@@ -147,6 +160,10 @@ body {
           @media screen and (max-width: 882px) {
             right: 90px;
           }
+          @media screen and (max-width: 574px) {
+            right: 40px;
+          }
+
           //a {
           //  &:before {
           //    content: url("../img/chevron-down-solid.svg");
@@ -166,7 +183,10 @@ body {
             bottom: -6px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
+            @media screen and (max-width: 846px) {
+              background-color: $color5;
 
+            }
           }
 
 
@@ -187,6 +207,9 @@ body {
           @media screen and (max-width: 882px) {
             right: 176px;
           }
+          @media screen and (max-width: 574px) {
+            right: 113px;
+          }
 
           &:after {
             content: "";
@@ -199,6 +222,12 @@ body {
             bottom: -6px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
+            @media screen and (max-width: 846px) {
+              background-color: $color5;
+            }
+            @media screen and (max-width: 474px) {
+              left: 6px;
+            }
 
           }
         }
@@ -217,6 +246,9 @@ body {
           @media screen and (max-width: 882px) {
             right: 239px;
           }
+          @media screen and (max-width: 574px) {
+            right: 185px;
+          }
 
           &:after {
             content: "";
@@ -229,7 +261,12 @@ body {
             bottom: -6px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
-
+            @media screen and (max-width: 846px) {
+              background-color: $color5;
+            }
+            @media screen and (max-width: 474px) {
+              left: 17px;
+            }
           }
         }
 
@@ -293,16 +330,18 @@ body {
     left: -23%;
     z-index: 1;
     @media screen and (max-width: 1468px) {
-      height: 1732px;
+      height: 1453px;
+      width: 112%;
     }
     @media screen and (max-width: 1342px) {
-      height: 1583px;
+      height: 1279px;
     }
     @media screen and (max-width: 1048px) {
       height: 1056px;
       width: 105%;
       left: -15%;
       background-color: #A05C5C;
+      z-index: 4;
     }
     @media screen and (max-width: 902px) {
       height: 1001px;
@@ -312,7 +351,35 @@ body {
       left: -6%;
     }
     @media screen and (max-width: 846px) {
-      height: 912px;
+      height: 1036px;
+      width: 122%;
+      left: -11%;
+    }
+
+    @media screen and (max-width: 710px) {
+      height: 930px;
+      width: 122%;
+      left: -11%;
+    }
+    @media screen and (max-width: 662px) {
+      height: 871px;
+      width: 122%;
+      left: -11%;
+    }
+    @media screen and (max-width: 574px) {
+      height: 810px;
+      width: 122%;
+      left: -11%;
+    }
+    @media screen and (max-width: 550px) {
+      height: 810px;
+      width: 147%;
+      left: -30%;
+    }
+    @media screen and (max-width: 426px) {
+      height: 792px;
+      width: 180%;
+      left: -48%;
     }
   }
 
@@ -320,7 +387,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 9;
 
     hr {
       position: absolute;
@@ -339,10 +406,43 @@ body {
     .profile-mandala-img {
       position: absolute;
 
+
+      img {
+        &:nth-child(1) {
+          @media screen and (max-width: 710px) {
+            width: 210px;
+          }
+          @media screen and (max-width: 474px) {
+            width: 196px;
+          }
+        }
+      }
+
       .img-melissa {
         position: absolute;
         left: 23px;
         top: 11px;
+        @media screen and (max-width: 710px) {
+          left: 19px;
+          top: 16px;
+          width: 170px;
+        }
+        @media screen and (max-width: 474px) {
+          left: 18px;
+          top: 16px;
+          width: 159px;
+        }
+      }
+    }
+
+    .profile-top-left {
+      @media screen and (max-width: 710px) {
+        width: 300px;
+      }
+      @media screen and (max-width: 474px) {
+        width: 266px;
+        position: relative;
+        top: -9px;
       }
     }
   }
@@ -353,6 +453,11 @@ body {
     z-index: 4;
     padding-left: 320px;
     padding-bottom: 46px;
+    div{
+      @media screen and (max-width: 516px) {
+        padding-top: 4em;
+      }
+    }
     @media screen and (max-width: 1508px) {
       padding-left: 400px;
     }
@@ -374,7 +479,46 @@ body {
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      z-index: -1;
+      z-index: 2;
+    }
+    @media screen and (max-width: 822px) {
+      position: relative !important;
+      padding-bottom: 0 !important;
+      top: 0 !important;
+      width: 136%;
+      left: -150px;
+      height: 835px;
+      padding-left: 0 !important;
+      margin: 0 auto;
+      background-color: #441e1e;
+      /* border-radius: 50%; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 2;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    @media screen and (max-width: 710px) {
+      top: -85px !important;
+    }
+    @media screen and (max-width: 662px) {
+      top: -156px !important;
+    }
+    @media screen and (max-width: 574px) {
+      top: -225px !important;
+      width: 154%;
+      left: -150px;
+      height: 835px;
+    }
+    @media screen and (max-width: 516px) {
+      top: -177px !important;
+      width: 155%;
+      left: -146px;
+      height: 693px;
     }
 
     h1 {
@@ -458,6 +602,9 @@ body {
     @media screen and (max-width: 1048px) {
       display: none;
     }
+    @media screen and (max-width: 1342px) {
+      top: 47%;
+    }
   }
 
   .about-me {
@@ -472,11 +619,25 @@ body {
       top: 0 !important;
       left: 0 !important;
     }
+    @media screen and (max-width: 1465px) {
+      position: relative;
+      top: 700px;
+      left: 160px;
+      z-index: 3;
+      margin-bottom: 5em;
+    }
+    @media screen and (max-width: 1048px) {
+      width: 80%;
+      margin: 0 auto;
+    }
 
     h3 {
       font-family: $font2;
       font-weight: 400;
       font-size: 24px;
+      @media screen and (max-width: 1465px) {
+        color: $color5;
+      }
     }
 
     .p-size {
@@ -484,6 +645,7 @@ body {
       margin-bottom: 40px;
       margin-top: 40px;
       padding-left: 0;
+      text-align: justify;
     }
 
     p {
@@ -491,6 +653,9 @@ body {
       font-size: 20px;
       font-family: $font1;
       padding-left: 15px;
+      @media screen and (max-width: 1465px) {
+        color: black;
+      }
     }
   }
 
@@ -500,8 +665,17 @@ body {
     z-index: 8;
     right: -365px;
     rotate: 90deg;
-    @media screen and (max-width: 1448px) {
-      display: none;
+    @media screen and (max-width: 1658px) {
+      width: 1000px;
+    }
+    @media screen and (max-width: 1364px) {
+      width: 800px;
+    }
+    @media screen and (max-width: 1048px) {
+      z-index: 1;
+    }
+    @media screen and (max-width: 938px) {
+      width: 700px;
     }
   }
 
@@ -519,6 +693,18 @@ body {
     bottom: 180px;
     left: 450px;
     width: 220px;
+    @media screen and (max-width: 1465px) {
+      position: absolute;
+      bottom: 180px;
+      left: 739px;
+      width: 220px;
+    }
+    @media screen and (max-width: 930px) {
+      position: absolute;
+      bottom: 250px;
+      left: 639px;
+      width: 220px;
+    }
   }
 }
 
