@@ -453,11 +453,16 @@ body {
     z-index: 4;
     padding-left: 320px;
     padding-bottom: 46px;
-    div{
+
+    div {
       @media screen and (max-width: 516px) {
         padding-top: 4em;
       }
+      @media screen and (max-width: 450px) {
+        padding-top: 6em;
+      }
     }
+
     @media screen and (max-width: 1508px) {
       padding-left: 400px;
     }
@@ -515,10 +520,11 @@ body {
       height: 835px;
     }
     @media screen and (max-width: 516px) {
-      top: -177px !important;
-      width: 155%;
-      left: -146px;
+      top: -152px !important;
+      width: 800px;
+      left: 50%;
       height: 693px;
+      transform: translate(-50%);
     }
 
     h1 {
@@ -533,6 +539,11 @@ body {
         font-size: 36px;
 
       }
+      @media screen and (max-width: 450px) {
+        font-size: 40px;
+        margin-top: 0;
+        font-weight: 500;
+      }
     }
 
     h2 {
@@ -545,7 +556,11 @@ body {
       @media screen and (max-width: 1048px) {
         max-width: 300px;
         font-size: 36px;
-        margin-bottom: 0;
+        margin-bottom: 50px;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 40px;
+        font-weight: 500;
       }
     }
 
@@ -557,6 +572,13 @@ body {
       @media screen and (max-width: 1508px) {
         max-width: 450px;
         text-align: justify;
+      }
+      @media screen and (max-width: 484px) {
+        width: 325px;
+        text-align: justify;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 16px;
       }
     }
 
@@ -630,6 +652,10 @@ body {
       width: 80%;
       margin: 0 auto;
     }
+    @media screen and (max-width: 450px) {
+      width: 100%;
+      margin: 0 auto;
+    }
 
     h3 {
       font-family: $font2;
@@ -637,6 +663,10 @@ body {
       font-size: 24px;
       @media screen and (max-width: 1465px) {
         color: $color5;
+      }
+      @media screen and (max-width: 450px) {
+        width: 282px !important;
+        margin: 0 auto;
       }
     }
 
@@ -655,6 +685,10 @@ body {
       padding-left: 15px;
       @media screen and (max-width: 1465px) {
         color: black;
+      }
+      @media screen and (max-width: 450px) {
+        width: 328px !important;
+        margin: 0 auto;
       }
     }
   }
@@ -677,6 +711,14 @@ body {
     @media screen and (max-width: 938px) {
       width: 700px;
     }
+    @media screen and (max-width: 450px) {
+      width: 508px;
+      position: absolute;
+      top: 717px;
+      z-index: 1;
+      right: -175px;
+      rotate: 101deg;
+    }
   }
 
   .chevron-down-header2 {
@@ -685,7 +727,9 @@ body {
     z-index: 8;
     transform: translate(-50%, -50%);
     bottom: 50px;
-
+    @media screen and (max-width: 450px) {
+      display: none;
+    }
   }
 
   .ampoule {
@@ -704,6 +748,15 @@ body {
       bottom: 250px;
       left: 639px;
       width: 220px;
+    }
+    @media screen and (max-width: 450px) {
+      position: relative;
+      bottom: -40px;
+      left: auto;
+      width: 183px;
+      margin: 0 auto;
+      display: block;
+      rotate: 68deg;
     }
   }
 }
@@ -737,6 +790,11 @@ body {
     width: 80%;
     height: 150px;
     object-fit: cover;
+    @media screen and (max-width: 450px) {
+      width: 100%;
+      height: 107px;
+      margin-top: 2em;
+    }
   }
 
   h4 {
@@ -771,6 +829,7 @@ body {
   ul {
     line-height: 25px;
     margin-top: 0;
+    margin: 0;
   }
 
   li {
@@ -797,16 +856,31 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    @media screen and (max-width: 450px) {
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 50px;
+    }
 
     .left {
       display: flex;
       flex-direction: column;
       gap: 6em;
+      @media screen and (max-width: 450px) {
+        gap: 2em;
+      }
 
       .etudes-cv {
         display: flex;
         flex-direction: column;
         gap: 25px;
+        @media screen and (max-width: 450px) {
+          margin-bottom: 25px;
+
+        }
       }
     }
 
@@ -817,6 +891,9 @@ body {
       align-items: center;
       justify-content: center;
       width: 290px;
+      @media screen and (max-width: 450px) {
+        justify-content: start;
+      }
 
       img {
         border-radius: 10px;
@@ -831,10 +908,19 @@ body {
       display: flex;
       flex-direction: column;
       gap: 25px;
+      @media screen and (max-width: 450px) {
+        margin-bottom: 25px;
+      }
     }
   }
 
   .langue {
+    &:nth-child(2) {
+      @media screen and (max-width: 450px) {
+        margin-bottom: 25px;
+      }
+    }
+
     h4 {
       margin-bottom: 15px;
     }
@@ -868,6 +954,9 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 10em;
+  @media screen and (max-width: 450px) {
+    margin-top: 7em;
+  }
 }
 
 
@@ -877,12 +966,23 @@ body {
   justify-content: space-evenly;
   display: flex;
   margin-top: 3em;
+  @media screen and (max-width: 450px) {
+    flex-wrap: wrap;
+  }
 
   .form {
     width: 540px;
     display: flex;
     align-items: end;
     justify-content: end;
+    @media screen and (max-width: 450px) {
+      width: 100%;
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
     form {
       width: 80%;
@@ -896,6 +996,10 @@ body {
     z-index: 1;
     width: 736px;
     height: 718px;
+    @media screen and (max-width: 450px) {
+      display: none;
+
+    }
   }
 
   label {
@@ -911,6 +1015,14 @@ body {
     font-weight: 400;
     font-size: 26px;
     margin-bottom: 50px;
+
+    &:nth-child(1) {
+      @media screen and (max-width: 450px) {
+        margin-bottom: 50px;
+      }
+    }
+
+
   }
 
   input {
@@ -972,14 +1084,28 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4em;
+    @media screen and (max-width: 450px) {
+      gap: 2em;
+    }
     position: relative;
     top: -50px;
     width: 540px;
+    @media screen and (max-width: 450px) {
+      width: 80%;
+      top: auto;
+    }
 
     h4 {
       color: $color2;
       font-family: $font1;
       font-weight: 400;
+
+      @media screen and (max-width: 450px) {
+        width: 250px;
+        margin: 0 auto;
+        padding-top: 100px;
+      }
+
     }
 
     .contact-picto {
@@ -996,6 +1122,11 @@ body {
   top: 55%;
   margin: 0;
   z-index: 1;
+  @media screen and (max-width: 450px) {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 footer {
@@ -1013,7 +1144,9 @@ footer {
     position: absolute;
     background-color: $color5;
     z-index: -1;
-
+    @media screen and (max-width: 450px) {
+      height: 264.04px;
+    }
   }
 
   .chevron-down-header4 {
@@ -1023,6 +1156,14 @@ footer {
     height: 572.4px;
     top: 100px;
     transform: rotate(11.55deg);
+    @media screen and (max-width: 450px) {
+      position: absolute;
+      left: -20px;
+      width: 437.28px;
+      height: 437.4px;
+      top: 222px;
+      transform: rotate(-81deg);
+    }
 
   }
 
@@ -1035,6 +1176,11 @@ footer {
     gap: 5em;
     padding-right: 10em;
     position: relative;
+    @media screen and (max-width: 450px) {
+      gap: 7px;
+      padding-right: 0;
+      justify-content: center;
+    }
 
     svg {
       position: absolute;
@@ -1045,8 +1191,16 @@ footer {
     a {
       width: 159.055px;
       height: 159.055px;
+      @media screen and (max-width: 450px) {
+        width: 98px;
+        height: 98px;
+        top: -132px;
+      }
       border-radius: 50%;
       background-color: $color5;
+      @media screen and (max-width: 450px) {
+        background-color: $color6;
+      }
       text-decoration: none;
       color: $color1;
       font-size: 22.29px;
@@ -1058,6 +1212,10 @@ footer {
       position: relative;
       top: -90px;
       transition: all 0.5s ease-in-out;
+      @media screen and (max-width: 450px) {
+        font-size: 15px;
+        border: 7px solid $color1;
+      }
 
       &:hover {
         background-color: $color1;
