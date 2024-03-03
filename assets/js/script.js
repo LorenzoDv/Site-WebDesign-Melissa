@@ -210,28 +210,6 @@ function parallax(e) {
 
 document.addEventListener('mousemove', parallax);
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-    },
-
-    speed: 800,
-    autoHeight: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    keyboard: true,
-});
 
 // var swiper = new Swiper(".mySwiper", {
 //

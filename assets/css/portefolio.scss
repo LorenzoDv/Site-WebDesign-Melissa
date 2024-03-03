@@ -36,7 +36,6 @@
         height: 550px;
         opacity: 0.7;
 
-
         a {
           position: absolute;
           left: 50%;
@@ -66,6 +65,9 @@
           z-index: 1;
           width: 606.112px;
           height: 550px;
+          @media screen and (max-width: 1740px) {
+            left: 2%;
+          }
         }
 
         &:nth-child(2) {
@@ -78,6 +80,9 @@
 
         &:nth-child(3) {
           right: 10%;
+          @media screen and (max-width: 1740px) {
+            right: 2%;
+          }
           z-index: 1;
           width: 606.112px;
           height: 550px;
@@ -319,4 +324,190 @@ footer {
   100% {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (max-width: 1422px) {
+  .slidePortefolio {
+    display: none;
+  }
+  .slidePortofolioMobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1422px) {
+  .slidePortefolio {
+    display: block;
+  }
+  .slidePortofolioMobile {
+    display: none;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    color: $color1;
+    text-align: center;
+    font-family: $font2;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none !important;
+    @media screen and (max-width: 638px) {
+      top: 34%;
+    }
+  }
+}
+
+.img-middle {
+  display: block;
+  height: 90%;
+  margin: 0 auto;
+  object-fit: cover;
+  @media screen and (max-width: 638px) {
+    width: 358.673px;
+    height: 325.084px;
+  }
+}
+
+.swiper-slide {
+  .img-left {
+    @media screen and (max-width: 638px) {
+      position: absolute;
+      left: -27%;
+      z-index: -1;
+      bottom: 14%;
+      display: block;
+      width: 323.994px;
+      height: 294px;
+
+    }
+    @media screen and (max-width: 408px) {
+      left: -18%;
+    }
+  }
+}
+
+.swiper-slide-active {
+  .img-left {
+    @media screen and (max-width: 638px) {
+      position: absolute;
+      left: -12%;
+      z-index: -1;
+      bottom: 14%;
+      display: block;
+      width: 323.994px;
+      height: 294px;
+    }
+    @media screen and (max-width: 534px) {
+      left: -17%;
+    }
+    @media screen and (max-width: 504px) {
+      left: -24%;
+    }
+    @media screen and (max-width: 456px) {
+      left: -32%;
+    }
+    @media screen and (max-width: 408px) {
+      left: -38%;
+    }
+  }
+}
+
+//
+//.swiper-slide-next {
+//  .img-left {
+//    left: -27%;
+//    position: absolute;
+//    z-index: -1;
+//    bottom: 14%;
+//    display: block;
+//    width: 323.994px;
+//    height: 294px;
+//  }
+//}
+
+.swiper-wrapper {
+  overflow: hidden !important;
+
+}
+
+.swiper-button-prev {
+  rotate: 180deg;
+  left: 25% !important;
+  @media screen and (max-width: 1234px) {
+    left: 20% !important;
+  }
+  @media screen and (max-width: 994px) {
+    left: 15% !important;
+  }
+  @media screen and (max-width: 822px) {
+    left: 7% !important;
+  }
+  @media screen and (max-width: 638px) {
+    left: 178px !important;
+  }
+}
+
+.swiper-button-next {
+  right: 25% !important;
+  @media screen and (max-width: 1234px) {
+    right: 20% !important;
+  }
+  @media screen and (max-width: 994px) {
+    right: 15% !important;
+  }
+  @media screen and (max-width: 822px) {
+    right: 7% !important;
+  }
+  @media screen and (max-width: 638px) {
+    left: 289px !important;
+
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  width: auto;
+  height: auto;
+  @media screen and (max-width: 638px) {
+    top: 82% !important;
+    z-index: 9999 !important;
+  }
+
+  &:after {
+    display: none;
+  }
+}
+
+.swiper-pagination {
+  @media screen and (max-width: 638px) {
+    top: 80% !important;
+    left: 51px !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: $color1 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color6 !important;
 }
