@@ -521,3 +521,287 @@ footer {
   }
 }
 
+@media screen and (max-width: 1188px) {
+  .nav-mobile{
+    display: block;
+    background-color: transparent;
+    height: auto;
+    position: relative;
+    .bandeaux-mobile{
+      height: 265px;
+      background-color: $color3;
+      .nav-left{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: 100%;
+        ul{
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          width: 40%;
+          height: 80%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: end;
+          @media screen and (max-width: 424px) {
+            width: 50%;
+          }
+          li{
+            position: relative;
+            p{
+              color: $color1;
+              font-family: "Montserrat",sans-serif;
+              font-size: 20px;
+              font-weight: 400;
+              margin: 0;
+            }
+            a{
+              text-decoration: none;
+              text-transform: uppercase;
+              &:after{
+                content: none;
+              }
+            }
+            &:after{
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -5px;
+              width: 100%;
+              height: 3px;
+              background-color: $color1;
+            }
+            .sous-menu{
+              left: 0;
+              top: 34px;
+            }
+            #sous-menu-mobile{
+              position: relative;
+              &:before {
+                content: url("../img/Vectorfleche.svg");
+                display: block;
+                position: absolute;
+                right: -23px;
+                top: -5px;
+                transform: scale(1.5);
+              }
+            }
+            .active-menu{
+              width: 208px;
+            }
+          }
+          .port{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: start;
+            width: 100%;
+          }
+          .cont{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: start;
+            width: 80%;
+          }
+          .acc{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: start;
+            width: 60%;
+          }
+        }
+      }
+    }
+    .circle-mobile{
+      width: 350px;
+      height: 350px;
+      background-color: $color5;
+      border: 10px solid $color1;
+      border-radius: 50%;
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media screen and (max-width: 665px) {
+        width: 316.746px;
+        height: 316.746px;
+        left: -9%;
+        top: 40%;
+      }
+      @media screen and (max-width: 424px) {
+        width: 250px;
+        height: 250px;
+        left: -13%;
+      }
+      h1{
+        color: $color1;
+        text-align: center;
+        font-family: $font2;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        left: 9px;
+      }
+    }
+  }
+  .nav-desktop{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1188px) {
+  .nav-mobile{
+    display: none;
+  }
+  .nav-desktop{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 949px) {
+  .creations{
+    .projet{
+      justify-content: center;
+      gap: 25px;
+      flex-direction: column;
+      .circle-rose{
+        width: 74px !important;
+        height: 74px !important;
+        svg{
+          width: 60%;
+          margin: 0 auto;
+
+        }
+      }
+      .txt-creation{
+        width: 50%;
+        @media screen and (max-width: 498px){
+          width: 80%;
+        }
+        h2{
+          @media screen and (max-width: 949px){
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1512px) {
+  footer{
+    .picto{
+      gap: 1em;
+    }
+    .nav-right{
+      gap: 1em !important;
+    }
+  }
+}
+@media screen and (max-width: 1370px) {
+  footer{
+    .bandeaux{
+      border-radius: 0 !important;
+    }
+    .x2{
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      .contact{
+        bottom: 155px;
+        left: 66px;
+        width: 200px;
+        height: 200px;
+        cursor: url(../img/Dino.png),auto;
+        border: 19px solid #f1e7e7;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background: #862d2d;
+        @media screen and (max-width: 800px){
+          left: 30px;
+          width: 123.682px;
+          height: 123.682px;
+          border: 10px solid #f1e7e7;
+        }
+        @media screen and (max-width: 524px){
+          left: 5px;
+        }
+        a{
+          top: auto !important;
+
+          @media screen and (max-width: 800px){
+            font-size: 19px;
+          }
+        }
+      }
+    }
+    .picto{
+      gap: 1em;
+      justify-content: space-evenly;
+      width: 100%;
+      top: -88px;
+      @media screen and (max-width: 524px){
+        gap: 5px;
+        justify-content: center;
+      }
+      @media screen and (max-width: 800px){
+        top: -62px;
+        margin-left: 171px;
+
+        div{
+          border: 8px solid #f1e7e7 !important;
+          width: 74.539px !important;
+          height: 74.539px !important;
+          @media screen and (max-width: 524px){
+            width: 63.539px !important;
+            height: 63.539px !important;
+            border: 6px solid #f1e7e7 !important;
+          }
+          a{
+            img{
+              width: auto !important;
+            }
+          }
+          img{
+            @media screen and (max-width: 524px){
+              width: 48%;
+            }
+          }
+        }
+      }
+    }
+    .nav-right{
+      width: auto !important;
+      gap: 1em !important;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+
+      a{
+        position: absolute;
+        bottom: -71px;
+        right: -32px;
+        top: auto !important;
+        span{
+          position: relative;
+          top: -18px;
+        }
+        &:nth-child(2){
+          display: none;
+        }
+        &:nth-child(3){
+          display: none;
+        }
+      }
+
+    }
+  }
+}
