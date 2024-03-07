@@ -407,15 +407,21 @@ footer {
 
 .swiper-slide-active {
   .img-left {
+
     @media screen and (max-width: 638px) {
       position: absolute;
       left: -12%;
       z-index: -1;
       bottom: 14%;
-      display: block;
       width: 323.994px;
       height: 294px;
+      display: block;
     }
+    @media screen and (min-width: 638px) {
+      display: none;
+    }
+
+
     @media screen and (max-width: 534px) {
       left: -17%;
     }
@@ -499,7 +505,8 @@ footer {
 .swiper-pagination {
   @media screen and (max-width: 638px) {
     top: 80% !important;
-    left: 51px !important;
+    left: 224px !important;
+    width: auto !important;
   }
 }
 
@@ -510,4 +517,116 @@ footer {
 
 .swiper-pagination-bullet-active {
   background-color: $color6 !important;
+}
+
+@media screen and (max-width: 1370px) {
+  footer {
+    .bandeaux {
+      border-radius: 0 !important;
+    }
+
+    .x2 {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+
+      .contact {
+        bottom: 155px;
+        left: 66px;
+        width: 200px;
+        height: 200px;
+        cursor: url(../img/Dino.png), auto;
+        border: 19px solid #161616;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background: #862d2d;
+        @media screen and (max-width: 800px) {
+          left: 30px;
+          width: 123.682px;
+          height: 123.682px;
+          border: 10px solid #161616;
+        }
+        @media screen and (max-width: 524px) {
+          left: 5px;
+        }
+
+        a {
+          top: auto !important;
+
+          @media screen and (max-width: 800px) {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+
+    .picto {
+      gap: 1em;
+      justify-content: space-evenly;
+      width: 100%;
+      top: -88px;
+      @media screen and (max-width: 524px) {
+        gap: 5px;
+        justify-content: center;
+      }
+      @media screen and (max-width: 800px) {
+        top: -62px;
+        margin-left: 171px;
+
+        div {
+          border: 8px solid #161616 !important;
+          width: 74.539px !important;
+          height: 74.539px !important;
+          @media screen and (max-width: 524px) {
+            width: 63.539px !important;
+            height: 63.539px !important;
+            border: 6px solid #161616 !important;
+          }
+
+          a {
+            img {
+              width: auto !important;
+            }
+          }
+
+          img {
+            @media screen and (max-width: 524px) {
+              width: 48%;
+            }
+          }
+        }
+      }
+    }
+
+    .nav-right {
+      width: auto !important;
+      gap: 1em !important;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+
+      a {
+        position: absolute;
+        bottom: -71px;
+        top: auto !important;
+
+        span {
+          position: relative;
+          top: -18px;
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+
+    }
+  }
 }
