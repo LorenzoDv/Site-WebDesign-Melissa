@@ -26,7 +26,7 @@
 <a href="#top" class="click-to-top">
     <img src="../assets/img/Top_fleche.png" alt="top fleche" class="arrow-up">
 </a>
-<nav>
+<nav class="nav-desktop">
     <div class="navtop">
         <a href="../" class="fleur-right">
             ACCUEIL
@@ -54,6 +54,35 @@
             ABOUT ME
         </a>
     </div>
+</nav>
+<nav class="nav-mobile">
+    <div class="bandeaux-mobile">
+        <div class="nav-left">
+            <ul>
+                <li class="port p-relative">
+                    <p id="sous-menu-mobile">
+                        PORTFOLIO
+                    </p>
+                    <div class="sous-menu">
+                        <a href="toutes-les-identites-visuel">Identités visuelles</a>
+                        <a href="toutes-les-maquettes">Maquettes</a>
+                        <a href="toutes-les-creations">Créations</a>
+                    </div>
+                </li>
+                <li class="cont">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="acc">
+                    <a href="#">ACCUEIL</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="circle-mobile">
+        <img class="x5" src="../assets/img/circle-mandala.png" alt="eclypse">
+        <h1>Premier portfolio</h1>
+    </div>
+
 </nav>
 <div class="main-portefolio">
     <div class="p-relative header">
@@ -195,7 +224,8 @@
     <div class="smartphone">
         <h4>Smartphone</h4>
     </div>
-    <img src="../assets/img/Tel.webp" alt="maquette portefolio tête en friche">
+    <img class="x1" src="../assets/img/Tel.webp" alt="maquette portefolio tête en friche">
+    <img class="x2" src="../assets/img/all-mobile-phone.png" alt="maquette portefolio tête en friche">
 </div>
 <div class="deux-version">
     <div class="all-version">
@@ -230,7 +260,7 @@
     <div class="p-relative d-flex align-items-center align-items-end over-hidden w100">
 
         <div class="bandeaux w100 d-flex justify-content-beetween">
-            <div>
+            <div class="x2">
                 <div class="contact">
                     <a href="/#form">Contactez <br> moi !
                     </a>
@@ -267,15 +297,21 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 0,
         loop: true,
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },
+        breakpoints: {
 
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
         speed: 800,
         autoHeight: true,
         navigation: {
