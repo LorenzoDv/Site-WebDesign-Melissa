@@ -347,6 +347,11 @@ nav {
     flex-direction: column;
     top: -186px;
     left: 99px;
+    @media screen and (max-width: 701px) {
+      width: 100%;
+      height: auto;
+      left: 0 !important;
+    }
 
     span {
       font-weight: 500;
@@ -354,6 +359,15 @@ nav {
 
     img {
       z-index: 1;
+      @media screen and (max-width: 701px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 554px) {
+        width: 111%;
+      }
+      @media screen and (max-width: 490px) {
+        width: 127%;
+      }
     }
 
     p {
@@ -367,6 +381,9 @@ nav {
       font-style: normal;
       font-weight: 200;
       line-height: normal;
+      @media screen and (max-width: 590px) {
+        font-size: 15px;
+      }
     }
   }
 
@@ -1129,6 +1146,7 @@ footer {
         left: 50%;
         top: 13px;
         transform: translate(-50%);
+
       }
 
       .rond-rouge-foncé {
@@ -1152,12 +1170,32 @@ footer {
         left: 50%;
         top: 13px;
         transform: translate(-50%);
+        @media screen and (max-width: 701px) {
+          width: 100%;
+        }
 
         .desciption {
           top: -79px;
           left: 8px;
           width: 472px;
           height: 472px;
+          @media screen and (max-width: 701px) {
+            width: 100%;
+            height: auto;
+          }
+          @media screen and (max-width: 590px) {
+            top: -49px !important;
+          }
+
+          p {
+            @media screen and (max-width: 590px) {
+              font-size: 15px;
+              line-height: 30px;
+            }
+            @media screen and (max-width: 452px) {
+              width: 80%;
+            }
+          }
         }
 
         .couleur {
@@ -1258,6 +1296,7 @@ footer {
 @media screen and (max-width: 1188px) {
   .main-portefolio {
     margin-top: 8em;
+    overflow: hidden;
   }
   .nav-mobile {
     display: block;
