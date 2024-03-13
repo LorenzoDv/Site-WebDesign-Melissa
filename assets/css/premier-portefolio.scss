@@ -1,5 +1,8 @@
 @import "colors";
 
+//* {
+//  box-shadow: 0 0 0 3px red inset !important;
+//}
 
 body {
   margin: 0;
@@ -209,6 +212,9 @@ nav {
       font-weight: 500;
       line-height: normal;
       margin-top: -51px;
+      @media screen and (max-width: 400px) {
+        margin-top: -10px;
+      }
     }
 
     .z-index-typo {
@@ -290,7 +296,7 @@ nav {
         display: flex;
         align-items: center;
         justify-content: start;
-        gap: 15px;
+        gap: 20px;
         width: 118px;
 
         text-align: justify;
@@ -305,6 +311,10 @@ nav {
       .width-container {
         width: 190px;
         gap: 10px;
+
+        @media screen and (max-width: 389px) {
+          width: 170px;
+        }
       }
 
       .color1 {
@@ -345,6 +355,9 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @media screen and (max-width: 450px) {
+      top: -105px !important;
+    }
     top: -186px;
     left: 99px;
     @media screen and (max-width: 701px) {
@@ -368,6 +381,15 @@ nav {
       @media screen and (max-width: 490px) {
         width: 127%;
       }
+      @media screen and (max-width: 434px) {
+        width: 162%;
+      }
+      @media screen and (max-width: 410px) {
+        width: 175%;
+      }
+      @media screen and (max-width: 375px) {
+        width: 195%;
+      }
     }
 
     p {
@@ -382,8 +404,9 @@ nav {
       font-weight: 200;
       line-height: normal;
       @media screen and (max-width: 590px) {
-        font-size: 15px;
+        font-size: 20px;
       }
+
     }
   }
 
@@ -393,11 +416,13 @@ nav {
   }
 
   .arbo {
-    height: 960px;
+    height: 1112px;
+
     display: flex;
     @media screen and (max-width: 1062px) {
-      height: 1091px;
+      height: auto;
     }
+
 
     .red {
       background-color: $color5;
@@ -413,6 +438,9 @@ nav {
         left: 53%;
         transform: translate(-50%, -50%);
         top: 48%;
+        @media screen and (max-width: 812px) {
+          padding-top: 3em;
+        }
         @media screen and (max-width: 906px) {
           position: relative;
           transform: none;
@@ -421,6 +449,7 @@ nav {
         }
         @media screen and (max-width: 752px) {
           width: 95%;
+          padding-bottom: 63px;
         }
       }
 
@@ -430,8 +459,15 @@ nav {
         justify-content: center;
         width: 244px;
         height: 244px;
-        @media screen and (max-width: 1420px) {
+        @media screen and (max-width: 812px) {
           margin-left: 2em;
+          width: 175px;
+          height: 175px;
+          top: -90px;
+          svg {
+            width: 175px;
+            height: 175px;
+          }
         }
         border: 10px solid $color1;
         border-radius: 50%;
@@ -449,6 +485,9 @@ nav {
           font-style: normal;
           font-weight: 500;
           line-height: normal;
+          @media screen and (max-width: 882px) {
+            font-size: 20px;
+          }
         }
       }
 
@@ -464,8 +503,15 @@ nav {
         bottom: -122px;
         right: 0;
         margin-right: 15em;
-        @media screen and (max-width: 1420px) {
+        @media screen and (max-width: 812px) {
           margin-right: 2em;
+          width: 175px;
+          height: 175px;
+          bottom: -90px;
+          svg {
+            width: 175px;
+            height: 175px;
+          }
         }
 
         h2 {
@@ -478,6 +524,9 @@ nav {
           font-style: normal;
           font-weight: 500;
           line-height: normal;
+          @media screen and (max-width: 882px) {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -496,6 +545,9 @@ nav {
 
 .slide-maquette {
   margin-top: 20em;
+  @media screen and (max-width: 1188px) {
+    margin-top: 0;
+  }
 
   .desktop {
     width: 70%;
@@ -513,13 +565,18 @@ nav {
       font-size: 24px;
       font-weight: 400;
       color: $color1;
-
+      @media screen and (max-width: 882px) {
+        font-size: 19px;
+      }
     }
   }
 }
 
 .Sp {
   margin-top: 20em;
+  @media screen and (max-width: 450px) {
+    margin-top: 4em;
+  }
 
   .smartphone {
     width: 70%;
@@ -537,7 +594,9 @@ nav {
       font-size: 24px;
       font-weight: 400;
       color: $color1;
-
+      @media screen and (max-width: 882px) {
+        font-size: 19px;
+      }
     }
 
 
@@ -595,7 +654,8 @@ nav {
     z-index: 2;
     @media screen and (max-width: 656px) {
       top: -25px;
-      height: 76px;
+      height: 102px;
+      width: 92%;
     }
 
     h4 {
@@ -603,7 +663,9 @@ nav {
       font-size: 24px;
       font-weight: 400;
       color: $color1;
-
+      @media screen and (max-width: 882px) {
+        font-size: 19px;
+      }
     }
 
     img {
@@ -624,6 +686,9 @@ nav {
 
 .aller-retour {
   margin-top: 10em;
+  @media screen and (max-width: 450px) {
+    margin-top: 0;
+  }
 
   .aller {
     width: 100%;
@@ -648,6 +713,10 @@ nav {
         text-align: center;
         max-width: 85%;
       }
+      @media screen and (max-width: 1204px) {
+        font-size: 20px;
+        line-height: 23px;
+      }
       text-align: justify;
       font-family: $font1;
       font-size: 24px;
@@ -671,6 +740,10 @@ nav {
       border-top-right-radius: 150px;
 
     }
+    @media screen and (max-width: 450px) {
+
+      margin-top: -192px;
+    }
   }
 }
 
@@ -679,6 +752,11 @@ nav {
   margin: 0 auto;
   margin-top: 6em;
   display: block;
+  @media screen and (max-width: 450px) {
+    img {
+      width: 80%;
+    }
+  }
 }
 
 .travaillons-ensemble {
@@ -703,7 +781,7 @@ nav {
     margin: 0 auto;
     @media screen and (max-width: 882px) {
       height: 68px;
-      max-width: 250px;
+      max-width: 281px;
     }
 
     h5 {
@@ -716,7 +794,7 @@ nav {
       font-weight: 300;
       line-height: normal;
       @media screen and (max-width: 882px) {
-        font-size: 18px;
+        font-size: 20px;
       }
     }
   }
@@ -733,7 +811,7 @@ nav {
     margin: 0 auto;
     position: relative;
     top: -44.5px;
-    left: 100px;
+    left: 50px;
     z-index: -1;
     @media screen and (max-width: 882px) {
       height: 68px;
@@ -828,7 +906,7 @@ footer {
       svg {
         position: relative;
         top: 30px;
-        left: 15px;
+        left: 20px;
       }
     }
 
@@ -1099,6 +1177,9 @@ footer {
 .swiper-button-prev {
 
   left: -100px !important;
+  @media screen and (max-width: 510px) {
+    left: -84px !important;
+  }
 
   &::after {
     content: url("../img/Fleche-maison.svg") !important;
@@ -1114,6 +1195,12 @@ footer {
 .swiper-button-next {
 
   right: -60px !important;
+  @media screen and (max-width: 510px) {
+    right: -45px !important;
+  }
+  @media screen and (max-width: 400px) {
+    right: -36px !important;
+  }
 
   &::after {
     content: url("../img/Fleche-maison.svg") !important;
@@ -1183,17 +1270,15 @@ footer {
             width: 100%;
             height: auto;
           }
-          @media screen and (max-width: 590px) {
-            top: -49px !important;
-          }
+
 
           p {
             @media screen and (max-width: 590px) {
-              font-size: 15px;
+              font-size: 20px;
               line-height: 30px;
             }
             @media screen and (max-width: 452px) {
-              width: 80%;
+              width: 86%;
             }
           }
         }
@@ -1207,6 +1292,11 @@ footer {
 
           .desc-color {
             top: -45px;
+            left: 9px;
+            @media screen and (max-width: 434px) {
+              width: 100%;
+            }
+
           }
 
           h2 {
@@ -1229,12 +1319,18 @@ footer {
           width: 100%;
           left: 50%;
         }
-        top: 68%;
+        top: 72%;
         gap: 4em;
         @media screen and (max-width: 824px) {
-          gap: 0;
+          gap: 20px;
+        }
+        @media screen and (max-width: 370px) {
+          top: 75%;
         }
 
+        h2 {
+
+        }
 
         h3 {
           @media screen and (max-width: 824px) {
@@ -1249,13 +1345,33 @@ footer {
           @media screen and (max-width: 712px) {
             width: 100%;
           }
+          @media screen and (max-width: 620px) {
+            width: 116%;
+          }
+          @media screen and (max-width: 550px) {
+            width: 175%;
+          }
+          @media screen and (max-width: 384px) {
+            width: 178%;
+          }
+          @media screen and (max-width: 370px) {
+            width: 201%;
+          }
         }
 
         .z-index-typo {
           flex-direction: column;
           gap: 0;
 
+          @media screen and (max-width: 400px) {
+            gap: 22px;
+          }
+
           .left {
+            span {
+              margin-top: 14px !important;
+            }
+
             .p2 {
               @media screen and (max-width: 824px) {
                 margin: 0;
@@ -1286,6 +1402,10 @@ footer {
           z-index: 1;
           right: 107px;
           top: 100px;
+          @media screen and (max-width: 550px) {
+            right: -205px;
+            top: 51px;
+          }
         }
       }
     }
@@ -1297,12 +1417,14 @@ footer {
   .main-portefolio {
     margin-top: 8em;
     overflow: hidden;
+    padding-bottom: 11em;
   }
   .nav-mobile {
     display: block;
     background-color: transparent;
     height: auto;
     position: relative;
+    padding-top: 0;
 
     .bandeaux-mobile {
       height: 265px;
@@ -1434,6 +1556,9 @@ footer {
         position: absolute;
         @media screen and (max-width: 665px) {
           width: 386px;
+        }
+        @media screen and (max-width: 424px) {
+          width: 305px;
         }
       }
 
@@ -1621,5 +1746,31 @@ footer {
       }
 
     }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .width-container {
+    width: 160px !important;
+  }
+  .desc-color {
+    p {
+      font-size: 20px !important;
+    }
+
+    span {
+      width: 36px !important;
+      height: 36px !important;
+    }
+  }
+  .x4 {
+    width: 430px !important;
+    height: 430px !important;
+  }
+  .couleur {
+    left: 29px !important;
+  }
+  .desciption {
+    top: -105px !important;
   }
 }

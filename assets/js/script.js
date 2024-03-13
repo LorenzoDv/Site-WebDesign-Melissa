@@ -8,7 +8,9 @@ $('.sous-menu').mouseleave(function () {
     $('.sous-menu').removeClass('active-menu');
 });
 
-
+$('#sous-menu-mobile').click(function () {
+    $('.sous-menu').toggleClass('active-menu');
+});
 // $("#sous-menu").mouseleave(function () {
 //     if (!$('.sous-menu').hasClass('active-menu')) {
 //         $('.sous-menu').removeClass('active-menu');

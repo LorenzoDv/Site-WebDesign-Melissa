@@ -17,6 +17,9 @@
       top: 50px;
       position: relative;
       font-weight: 400;
+      @media screen and (max-width: 450px) {
+        font-size: 54px;
+      }
     }
 
     .slidePortefolio {
@@ -434,6 +437,9 @@ footer {
     @media screen and (max-width: 408px) {
       left: -38%;
     }
+    @media screen and (max-width: 370px) {
+      left: -48%;
+    }
   }
 }
 
@@ -470,6 +476,9 @@ footer {
   @media screen and (max-width: 638px) {
     left: 178px !important;
   }
+  @media screen and (max-width: 400px) {
+    left: 152px !important;
+  }
 }
 
 .swiper-button-next {
@@ -485,7 +494,9 @@ footer {
   }
   @media screen and (max-width: 638px) {
     left: 289px !important;
-
+  }
+  @media screen and (max-width: 400px) {
+    left: 272px !important;
   }
 }
 
@@ -507,6 +518,9 @@ footer {
     top: 80% !important;
     left: 224px !important;
     width: auto !important;
+  }
+  @media screen and (max-width: 400px) {
+    left: 202px !important;
   }
 }
 
